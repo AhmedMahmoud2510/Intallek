@@ -11,7 +11,5 @@ class AppColors {
   static const greyColor = Color(0xffEEEDEB);
   static const darkGreyColor = Color(0xff939185);
   static const errorColor = Color(0xFFFF2727);
-  static const iconColorBlack = Color(0xFF222222);
-  static const iconColorGray = Color(0xFF33363F);
-  static const blueColor = Color(0xFF3399FF);
+
 }

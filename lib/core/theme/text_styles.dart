@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:smle/core/cache_helper/cache_helper.dart';
+import 'package:intallek/core/cache_helper/cache_helper.dart';
 
 
 TextStyle interRegular =CacheHelper.getCurrentLanguage()=='en'?
