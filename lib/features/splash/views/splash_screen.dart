@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:intallek/core/shared_widgets/svg_image_widget.dart';
 import 'package:intallek/core/theme/assets.dart';
 import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/features/splash/controller/init_splash.dart';
@@ -16,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    initSplashScreen();
+    initSplashScreen(context);
   }
 
   @override
@@ -35,10 +34,10 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Container(
         width: MediaQuery.sizeOf(context).width,
         height: MediaQuery.sizeOf(context).height,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment(0.50, -0.00),
-            end: Alignment(0.50, 1.00),
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
             colors: [
               AppColors.secondaryColor,
               AppColors.thirdColor,
@@ -47,7 +46,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ],
           ),
         ),
-        child: SvgImage(imagePath: Assets.imagesSvgSplashLogo),
+        child: Image.asset(Assets.imagesPngSplashLogo),
       ),
     );
   }

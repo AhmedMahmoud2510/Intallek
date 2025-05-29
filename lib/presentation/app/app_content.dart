@@ -19,6 +19,15 @@ class AppContent extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: lightTheme,
         title: 'انطلق',
+        localeResolutionCallback: (deviceLocale, supportedLocales) {
+          for (final locale in supportedLocales) {
+            if (deviceLocale != null &&
+                deviceLocale.languageCode == locale.languageCode) {
+              return deviceLocale;
+            }
+          }
+          return supportedLocales.first;
+        },
         supportedLocales: S.supportedLocales,
         localizationsDelegates: const [
           S.delegate,
