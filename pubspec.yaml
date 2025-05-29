@@ -20,6 +20,8 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: ^0.20.2
+  get_it: ^8.0.3
+  very_good_analysis: ^8.0.0
 
   
 
@@ -33,9 +35,11 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   generate: true
-  assets:
-    - assets/images/
+
 # flutter gen-l10n
+  assets:
+    - assets/images/png/
+    - assets/images/svg/
 flutter_assets:
   assets_path: assets/
   output_path: lib/core/theme/

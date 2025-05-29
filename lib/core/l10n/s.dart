@@ -108,6 +108,48 @@ abstract class S {
   /// In en, this message translates to:
   /// **'Welcome to our app'**
   String get welcome;
+
+  /// No description provided for @onboarding1.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to your fastest destination\nPick a spot, set your route, and go in seconds.'**
+  String get onboarding1;
+
+  /// No description provided for @onboarding2.
+  ///
+  /// In en, this message translates to:
+  /// **'Wherever you are… we’re with you\nA network of ready-to-serve drivers available anywhere, anytime.'**
+  String get onboarding2;
+
+  /// No description provided for @onboarding3.
+  ///
+  /// In en, this message translates to:
+  /// **'Your transportation just got smarter\nFollow every trip with pro drivers and accurate tracking.'**
+  String get onboarding3;
+
+  /// No description provided for @next.
+  ///
+  /// In en, this message translates to:
+  /// **'Next'**
+  String get next;
+
+  /// No description provided for @skip.
+  ///
+  /// In en, this message translates to:
+  /// **'Skip'**
+  String get skip;
+
+  /// No description provided for @go.
+  ///
+  /// In en, this message translates to:
+  /// **'Go'**
+  String get go;
+
+  /// No description provided for @welcomeBack.
+  ///
+  /// In en, this message translates to:
+  /// **'welcome back'**
+  String get welcomeBack;
 }
 
 class _SDelegate extends LocalizationsDelegate<S> {

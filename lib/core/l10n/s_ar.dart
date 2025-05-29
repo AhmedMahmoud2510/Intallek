@@ -13,4 +13,28 @@ class SAr extends S {
 
   @override
   String get welcome => 'أهلاً بك في تطبيقنا';
+
+  @override
+  String get onboarding1 =>
+      'أهلاً بك في وجهتك الأسرع\nاختر المكان.. حدد الوجهة.. ابدأ رحلتك معنا في ثوانٍ';
+
+  @override
+  String get onboarding2 =>
+      'أينما كنت... نحن معك\nشبكة مندوبين جاهزين يخدمونك في كل مكان.';
+
+  @override
+  String get onboarding3 =>
+      'تنقّلك أصبح أكثر ذكاءً\nتابع رحلتك لحظة بلحظة مع نظام تتبع دقيق وسائقين محترفين.';
+
+  @override
+  String get next => 'التالي';
+
+  @override
+  String get skip => 'تخطي';
+
+  @override
+  String get go => 'انطلق';
+
+  @override
+  String get welcomeBack => 'مرحبا بعودتك';
 }
