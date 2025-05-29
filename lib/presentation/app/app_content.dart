@@ -4,6 +4,7 @@ import 'package:intallek/core/constants.dart';
 import 'package:intallek/core/l10n/s.dart';
 import 'package:intallek/core/theme/themes.dart';
 import 'package:intallek/core/theme/unfocus_scope.dart';
+import 'package:intallek/features/splash/views/splash_screen.dart';
 
 /// A widget that handles the app's content and state management.
 class AppContent extends StatelessWidget {
@@ -20,12 +21,12 @@ class AppContent extends StatelessWidget {
         title: 'انطلق',
         supportedLocales: S.supportedLocales,
         localizationsDelegates: const [
-          S.delegate, 
+          S.delegate,
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,
           GlobalCupertinoLocalizations.delegate,
         ],
-        // home: const SplashScreen(),
+        home: const SplashScreen(),
       ),
     );
   }
