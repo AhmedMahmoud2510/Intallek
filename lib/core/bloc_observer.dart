@@ -1,8 +1,5 @@
-
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'shared_widgets/debug_print_widget.dart';
-
+import 'package:intallek/core/shared_widgets/debug_print_widget.dart';
 
 class MyBlocObserver extends BlocObserver {
   @override

@@ -1,62 +1,54 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:intallek/core/cache_helper/cache_values.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import 'cache_values.dart';
 
 class CacheHelper {
   static late SharedPreferences sharedPreferences;
 
-  static init() async {
+  static Future<void> init() async {
     sharedPreferences = await SharedPreferences.getInstance();
   }
 
-  static dynamic getData({
-    required String key,
-  }) {
+  static dynamic getData({required String key}) {
     return sharedPreferences.get(key);
   }
 
-  static bool isEnglish() => getCurrentLanguage() == "en";
+  static bool isEnglish() => getCurrentLanguage() == 'en';
 
   static Future<void> changeLanguageToEn() async {
-    await CacheHelper.saveData(key: CacheKeys.currentLanguage, value: "en");
+    await CacheHelper.saveData(key: CacheKeys.currentLanguage, value: 'en');
   }
 
-  static String getCurrentLanguage() {
-    return CacheHelper.getData(
-          key: CacheKeys.currentLanguage,
-        ) ??
-        "en";
+  static dynamic getCurrentLanguage() {
+    return CacheHelper.getData(key: CacheKeys.currentLanguage) ?? 'en';
   }
 
   static Future<void> changeLanguageToAr() async {
-    await CacheHelper.saveData(key: CacheKeys.currentLanguage, value: "ar");
+    await CacheHelper.saveData(key: CacheKeys.currentLanguage, value: 'ar');
   }
 
   Future<void> cacheLanguageCode(String languageCode) async {
-    sharedPreferences.setString(CacheKeys.currentLanguage, languageCode);
+    await sharedPreferences.setString(CacheKeys.currentLanguage, languageCode);
   }
 
   static Future<bool> saveData({
     required String key,
     required dynamic value,
   }) async {
-    if (value is String) return await sharedPreferences.setString(key, value);
-    if (value is int) return await sharedPreferences.setInt(key, value);
-    if (value is bool) return await sharedPreferences.setBool(key, value);
+    if (value is String) return sharedPreferences.setString(key, value);
+    if (value is int) return sharedPreferences.setInt(key, value);
+    if (value is bool) return sharedPreferences.setBool(key, value);
 
-    return await sharedPreferences.setDouble(key, value);
+    return sharedPreferences.setDouble(key, value as double);
   }
 
-  static Future<bool> removeData({
-    required String key,
-  }) async {
-    return await sharedPreferences.remove(key);
+  static Future<bool> removeData({required String key}) async {
+    return sharedPreferences.remove(key);
   }
 
   static Future<bool> clearAllData() async {
-    return await sharedPreferences.clear();
+    return sharedPreferences.clear();
   }
 
   static Future saveSecuredString({
@@ -65,13 +57,12 @@ class CacheHelper {
   }) async {
     const flutterSecureStorage = FlutterSecureStorage();
     debugPrint(
-        "FlutterSecureStorage : setSecuredString with key : $key and value : $value");
+      'FlutterSecureStorage : setSecuredString with key : $key and value : $value',
+    );
     await flutterSecureStorage.write(key: key, value: value.toString());
   }
 
-  static Future getSecuredString({
-    required String key,
-  }) async {
+  static Future getSecuredString({required String key}) async {
     const flutterSecureStorage = FlutterSecureStorage();
     debugPrint('FlutterSecureStorage : getSecuredString with key :');
     try {
