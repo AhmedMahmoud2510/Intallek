@@ -1,29 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intallek/core/theme/colors.dart';
+import 'package:intallek/core/theme/fonts.dart';
 import 'package:intallek/core/theme/text_styles.dart';
 
-final ThemeData lightTheme = ThemeData(
-  appBarTheme: AppBarTheme(
-    centerTitle: true,
-    color: Colors.white,
-    systemOverlayStyle: SystemUiOverlayStyle.light,
-    // elevation: 3,
-    scrolledUnderElevation: 0,
-
-    titleTextStyle: robotoRegular.copyWith(color: AppColors.primaryColor),
-
-    iconTheme: IconThemeData(color: AppColors.primaryColor, size: 20.sp),
-    actionsIconTheme: IconThemeData(color: AppColors.primaryColor, size: 20.sp),
-  ),
-  bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-    backgroundColor: Colors.white,
-    selectedItemColor: AppColors.primaryColor,
-    unselectedItemColor: AppColors.greyColor,
-  ),
-  scaffoldBackgroundColor: Colors.white,
-  primaryColor: AppColors.primaryColor,
-  secondaryHeaderColor: AppColors.secondaryColor,
-  colorScheme: const ColorScheme.light(primary: AppColors.primaryColor),
-);
+class Appthemes {
+  static final lightTheme = ThemeData(
+    primaryColor: AppColors.primaryColor,
+    scaffoldBackgroundColor: AppColors.scaffoldBackgroundLight,
+    fontFamily: AppFonts.kPrimaryFont,
+    textTheme: TextTheme(
+      titleLarge: AppStyle.headBoldTextStyle,
+      titleMedium: AppStyle.labelMediumTextStyle,
+    ),
+    appBarTheme: const AppBarTheme(backgroundColor: AppColors.primaryColor),
+  );
+}

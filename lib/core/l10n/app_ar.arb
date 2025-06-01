@@ -1,15 +1,25 @@
 {
   "@@locale": "ar",
-  "hello": "مرحبا",
-  "welcome": "أهلاً بك في تطبيقنا",
   "onboarding1": "أهلاً بك في وجهتك الأسرع\nاختر المكان.. حدد الوجهة.. ابدأ رحلتك معنا في ثوانٍ",
   "onboarding2": "أينما كنت... نحن معك\nشبكة مندوبين جاهزين يخدمونك في كل مكان.",
   "onboarding3": "تنقّلك أصبح أكثر ذكاءً\nتابع رحلتك لحظة بلحظة مع نظام تتبع دقيق وسائقين محترفين.",
   "next": "التالي",
   "skip": "تخطي",
-  "go":"انطلق",
-    "welcomeBack":"مرحبا بعودتك",
-      "phoneNumber":"رقم الجوال","password":"كلمة المرور","signIn":"تسجيل الدخول",
-      "noAccountYet":"ليس لديك حساب؟","signUp":"إنشاء حساب جديد"
-
+  "go": "انطلق",
+  "welcomeBack": "مرحبا بعودتك",
+  "phoneNumber": "رقم الجوال",
+  "password": "كلمة المرور",
+  "signIn": "تسجيل الدخول",
+  "noAccountYet": "ليس لديك حساب؟",
+  "signUp": "إنشاء حساب جديد",
+  "createYourAccount": "انشاء حساب جديد",
+  "name": "الاسم",
+  "reTypePassword": "إعادة كلمة المرور",
+  "enterYourVerificationCode": "ادخل رمز التحقق",
+  "weSendVerificationCTo": "تم إرسال رمز التحقق إلى رقم جوالك",
+  "youCanCheckYourMessages": "يرجى مراجعة الرسائل",
+  "didntReceivedCode": "لم أستقبل الرمز.",
+  "sendAgain": "إعادة إرسال؟",
+  "missing": "مفقود!", "haveAnAccount": "لديك حساب بالفعل؟",
+    "passwordDoesntMatch":"كلمة المرور غير متطابقة"
 }

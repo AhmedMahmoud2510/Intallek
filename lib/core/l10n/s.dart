@@ -97,18 +97,6 @@ abstract class S {
     Locale('en'),
   ];
 
-  /// No description provided for @hello.
-  ///
-  /// In en, this message translates to:
-  /// **'Hello'**
-  String get hello;
-
-  /// No description provided for @welcome.
-  ///
-  /// In en, this message translates to:
-  /// **'Welcome to our app'**
-  String get welcome;
-
   /// No description provided for @onboarding1.
   ///
   /// In en, this message translates to:
@@ -180,6 +168,72 @@ abstract class S {
   /// In en, this message translates to:
   /// **'Sign up'**
   String get signUp;
+
+  /// No description provided for @createYourAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Create your account'**
+  String get createYourAccount;
+
+  /// No description provided for @name.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get name;
+
+  /// No description provided for @reTypePassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Re-type password'**
+  String get reTypePassword;
+
+  /// No description provided for @enterYourVerificationCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your verification code'**
+  String get enterYourVerificationCode;
+
+  /// No description provided for @weSendVerificationCTo.
+  ///
+  /// In en, this message translates to:
+  /// **'We send verification code to your mobile'**
+  String get weSendVerificationCTo;
+
+  /// No description provided for @youCanCheckYourMessages.
+  ///
+  /// In en, this message translates to:
+  /// **'You can check your messages'**
+  String get youCanCheckYourMessages;
+
+  /// No description provided for @didntReceivedCode.
+  ///
+  /// In en, this message translates to:
+  /// **'I didn’t received the code.'**
+  String get didntReceivedCode;
+
+  /// No description provided for @sendAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Send again?'**
+  String get sendAgain;
+
+  /// No description provided for @missing.
+  ///
+  /// In en, this message translates to:
+  /// **'missing!'**
+  String get missing;
+
+  /// No description provided for @haveAnAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Have An account?'**
+  String get haveAnAccount;
+
+  /// No description provided for @passwordDoesntMatch.
+  ///
+  /// In en, this message translates to:
+  /// **'Password does not match'**
+  String get passwordDoesntMatch;
 }
 
 class _SDelegate extends LocalizationsDelegate<S> {

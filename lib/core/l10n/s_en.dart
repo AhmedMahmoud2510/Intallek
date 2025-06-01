@@ -9,12 +9,6 @@ class SEn extends S {
   SEn([String locale = 'en']) : super(locale);
 
   @override
-  String get hello => 'Hello';
-
-  @override
-  String get welcome => 'Welcome to our app';
-
-  @override
   String get onboarding1 =>
       'Welcome to your fastest destination\nPick a spot, set your route, and go in seconds.';
 
@@ -52,4 +46,38 @@ class SEn extends S {
 
   @override
   String get signUp => 'Sign up';
+
+  @override
+  String get createYourAccount => 'Create your account';
+
+  @override
+  String get name => 'Name';
+
+  @override
+  String get reTypePassword => 'Re-type password';
+
+  @override
+  String get enterYourVerificationCode => 'Enter your verification code';
+
+  @override
+  String get weSendVerificationCTo =>
+      'We send verification code to your mobile';
+
+  @override
+  String get youCanCheckYourMessages => 'You can check your messages';
+
+  @override
+  String get didntReceivedCode => 'I didn’t received the code.';
+
+  @override
+  String get sendAgain => 'Send again?';
+
+  @override
+  String get missing => 'missing!';
+
+  @override
+  String get haveAnAccount => 'Have An account?';
+
+  @override
+  String get passwordDoesntMatch => 'Password does not match';
 }

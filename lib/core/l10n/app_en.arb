@@ -1,15 +1,26 @@
 {
   "@@locale": "en",
-  "hello": "Hello",
-  "welcome": "Welcome to our app",
   "onboarding1": "Welcome to your fastest destination\nPick a spot, set your route, and go in seconds.",
   "onboarding2": "Wherever you are… we’re with you\nA network of ready-to-serve drivers available anywhere, anytime.",
   "onboarding3": "Your transportation just got smarter\nFollow every trip with pro drivers and accurate tracking.",
   "next": "Next",
   "skip": "Skip",
-  "go":"Go",
-  "welcomeBack":"welcome back",
-  "phoneNumber":"Phone Number","password":"Password","signIn":"Sign in",
-
-  "noAccountYet":"No account yet?","signUp":"Sign up"
+  "go": "Go",
+  "welcomeBack": "welcome back",
+  "phoneNumber": "Phone Number",
+  "password": "Password",
+  "signIn": "Sign in",
+  "noAccountYet": "No account yet?",
+  "signUp": "Sign up",
+  "createYourAccount": "Create your account",
+  "name": "Name",
+  "reTypePassword": "Re-type password",
+  "enterYourVerificationCode": "Enter your verification code",
+  "weSendVerificationCTo": "We send verification code to your mobile",
+  "youCanCheckYourMessages": "You can check your messages",
+  "didntReceivedCode": "I didn’t received the code.",
+  "sendAgain": "Send again?",
+  "missing": "missing!",
+  "haveAnAccount": "Have An account?",
+  "passwordDoesntMatch":"Password does not match"
 }

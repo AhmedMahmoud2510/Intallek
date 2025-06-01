@@ -9,10 +9,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ScreenUtilInit(
-      designSize: Size(393, 852),
+    return ScreenUtilInit(
+      designSize: const Size(375, 812),
       minTextAdapt: true,
-      child: AppContent(),
+      builder: (context, child) {
+        return child ?? const SizedBox.shrink();
+      },
+      child: const AppContent()
     );
   }
 }

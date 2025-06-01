@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
+import 'package:intallek/core/router/app_routes.dart';
 import 'package:intallek/core/theme/assets.dart';
 import 'package:intallek/core/theme/colors.dart';
-import 'package:intallek/features/login/views/login_screen.dart';
 import 'package:intallek/features/onboarding/widgets/app_journey_dot.dart';
 import 'package:intallek/features/onboarding/widgets/next_button.dart';
 import 'package:intallek/features/onboarding/widgets/onboared_text.dart';
@@ -94,10 +95,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
             index: _currentIndex,
             onTap: () {
               if (_currentIndex == 2) {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const LoginScreen()),
-                );
+                GoRouter.of(context).pushNamed(AppRoutes.loginScreen);
               } else if (_currentIndex == 0) {
                 _pageController.nextPage(
                   duration: const Duration(seconds: 1),

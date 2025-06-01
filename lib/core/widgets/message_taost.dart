@@ -24,9 +24,7 @@ ToastFuture messageToast(BuildContext context, String message) {
                 child: Text(
                   message,
                   textAlign: TextAlign.center,
-                  style: robotoRegular.copyWith(
-                    color: Theme.of(context).cardColor,
-                  ),
+                  style: AppStyle.black16W700Style,
                 ),
               ),
             ),

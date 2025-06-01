@@ -9,12 +9,6 @@ class SAr extends S {
   SAr([String locale = 'ar']) : super(locale);
 
   @override
-  String get hello => 'مرحبا';
-
-  @override
-  String get welcome => 'أهلاً بك في تطبيقنا';
-
-  @override
   String get onboarding1 =>
       'أهلاً بك في وجهتك الأسرع\nاختر المكان.. حدد الوجهة.. ابدأ رحلتك معنا في ثوانٍ';
 
@@ -52,4 +46,37 @@ class SAr extends S {
 
   @override
   String get signUp => 'إنشاء حساب جديد';
+
+  @override
+  String get createYourAccount => 'انشاء حساب جديد';
+
+  @override
+  String get name => 'الاسم';
+
+  @override
+  String get reTypePassword => 'إعادة كلمة المرور';
+
+  @override
+  String get enterYourVerificationCode => 'ادخل رمز التحقق';
+
+  @override
+  String get weSendVerificationCTo => 'تم إرسال رمز التحقق إلى رقم جوالك';
+
+  @override
+  String get youCanCheckYourMessages => 'يرجى مراجعة الرسائل';
+
+  @override
+  String get didntReceivedCode => 'لم أستقبل الرمز.';
+
+  @override
+  String get sendAgain => 'إعادة إرسال؟';
+
+  @override
+  String get missing => 'مفقود!';
+
+  @override
+  String get haveAnAccount => 'لديك حساب بالفعل؟';
+
+  @override
+  String get passwordDoesntMatch => 'كلمة المرور غير متطابقة';
 }
