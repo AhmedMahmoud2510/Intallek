@@ -22,7 +22,7 @@ final ThemeData lightTheme = ThemeData(
     selectedItemColor: AppColors.primaryColor,
     unselectedItemColor: AppColors.greyColor,
   ),
-  scaffoldBackgroundColor: AppColors.greyColor,
+  scaffoldBackgroundColor: Colors.white,
   primaryColor: AppColors.primaryColor,
   secondaryHeaderColor: AppColors.secondaryColor,
   colorScheme: const ColorScheme.light(primary: AppColors.primaryColor),

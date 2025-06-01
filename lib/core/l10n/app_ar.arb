@@ -8,6 +8,8 @@
   "next": "التالي",
   "skip": "تخطي",
   "go":"انطلق",
-    "welcomeBack":"مرحبا بعودتك"
+    "welcomeBack":"مرحبا بعودتك",
+      "phoneNumber":"رقم الجوال","password":"كلمة المرور","signIn":"تسجيل الدخول",
+      "noAccountYet":"ليس لديك حساب؟","signUp":"إنشاء حساب جديد"
 
 }

@@ -37,4 +37,19 @@ class SEn extends S {
 
   @override
   String get welcomeBack => 'welcome back';
+
+  @override
+  String get phoneNumber => 'Phone Number';
+
+  @override
+  String get password => 'Password';
+
+  @override
+  String get signIn => 'Sign in';
+
+  @override
+  String get noAccountYet => 'No account yet?';
+
+  @override
+  String get signUp => 'Sign up';
 }

@@ -37,4 +37,19 @@ class SAr extends S {
 
   @override
   String get welcomeBack => 'مرحبا بعودتك';
+
+  @override
+  String get phoneNumber => 'رقم الجوال';
+
+  @override
+  String get password => 'كلمة المرور';
+
+  @override
+  String get signIn => 'تسجيل الدخول';
+
+  @override
+  String get noAccountYet => 'ليس لديك حساب؟';
+
+  @override
+  String get signUp => 'إنشاء حساب جديد';
 }

@@ -8,5 +8,8 @@
   "next": "Next",
   "skip": "Skip",
   "go":"Go",
-  "welcomeBack":"welcome back"
+  "welcomeBack":"welcome back",
+  "phoneNumber":"Phone Number","password":"Password","signIn":"Sign in",
+
+  "noAccountYet":"No account yet?","signUp":"Sign up"
 }
