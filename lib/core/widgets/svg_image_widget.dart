@@ -5,7 +5,7 @@ class SvgImage extends StatelessWidget {
   const SvgImage({
     required this.imagePath,
     super.key,
-    this.height = 200,
+    this.height = 24,
     this.color,
     this.isNetwork = false,
     this.isFill = false,

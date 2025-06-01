@@ -4,4 +4,5 @@ class AppRoutes {
   static const String loginScreen = '/loginScreen';
   static const String registerScreen = '/registerScreen';
   static const String verificationPage = '/verificationPage';
+  static const String appNavigationBar = '/AppNavigationBar';
 }

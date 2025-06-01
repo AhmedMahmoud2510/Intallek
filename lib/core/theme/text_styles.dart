@@ -33,4 +33,9 @@ class AppStyle {
     fontWeight: FontWeight.w400,
     color: AppColors.forthColor,
   );
+  static TextStyle navigationBarTextStyle = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+    color: AppColors.forthColor,
+  );
 }

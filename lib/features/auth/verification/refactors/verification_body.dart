@@ -50,7 +50,14 @@ class _VerificationBodyState extends State<VerificationBody> {
 
             const CustomTimerWidget(),
             86.verticalSpace,
-            CustomPrimaryBotton(text: S.of(context)!.verify, onPressed: () {}),
+            CustomPrimaryBotton(
+              text: S.of(context)!.verify,
+              onPressed: () {
+                GoRouter.of(
+                  context,
+                ).pushReplacementNamed(AppRoutes.appNavigationBar);
+              },
+            ),
             8.verticalSpace,
             Row(
               spacing: 6.w,

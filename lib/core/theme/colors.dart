@@ -7,6 +7,7 @@ class AppColors {
   static const forthColor = Color(0xff000000);
   static const successColor = Color(0xff00C846);
   static const greyColor = Color(0xffEEEDEB);
+  static const offWhiteColor = Color(0xffF0F0F0);
   static const lightGreyColor = Color(0xffcccccc);
   static const darkGreyColor = Color(0xff8C8983);
   static const errorColor = Color(0xFFFF2727);

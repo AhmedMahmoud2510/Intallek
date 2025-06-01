@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intallek/core/l10n/s.dart';
-import 'package:intallek/core/router/app_routes.dart';
 import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/core/theme/text_styles.dart';
 import 'package:intallek/core/widgets/custom_primary_botton.dart';
@@ -158,8 +157,7 @@ class _RegisterBodyState extends State<RegisterBody> {
                 text: S.of(context)!.signUp,
                 onPressed: () {
                   if (formKey.currentState!.validate()) {
-                      /// TODO
-                    GoRouter.of(context).pushNamed(AppRoutes.verificationPage);
+                    GoRouter.of(context).pop();
                   }
                 },
               ),

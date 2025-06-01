@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:intallek/core/router/app_routes.dart';
 import 'package:intallek/core/theme/assets.dart';
 import 'package:intallek/core/theme/colors.dart';
+import 'package:intallek/core/widgets/svg_image_widget.dart';
 import 'package:intallek/features/onboarding/widgets/app_journey_dot.dart';
 import 'package:intallek/features/onboarding/widgets/next_button.dart';
 import 'package:intallek/features/onboarding/widgets/onboared_text.dart';
@@ -46,7 +47,8 @@ class _OnboardingBodyState extends State<OnboardingBody> {
                 Container(
                   width: MediaQuery.sizeOf(context).width,
                   height: MediaQuery.sizeOf(context).height / 1.6,
-                  padding: EdgeInsets.only(top: 200.h),
+                  padding: EdgeInsets.only(top: 135.h),
+                  alignment: Alignment.center,
                   decoration: ShapeDecoration(
                     color: AppColors.darkGreyColor,
                     shape: RoundedRectangleBorder(
@@ -56,12 +58,13 @@ class _OnboardingBodyState extends State<OnboardingBody> {
                       ),
                     ),
                   ),
-                  child: Image.asset(
-                    index == 0
-                        ? Assets.imagesPngOnboarding1
+                  child: SvgImage(
+                    height: 235.h,
+                    imagePath: index == 0
+                        ? Assets.imagesSvgOnbaord1
                         : index == 1
-                        ? Assets.imagesPngOnboarding2
-                        : Assets.imagesPngOnboarding3,
+                        ? Assets.imagesSvgOnbaord2
+                        : Assets.imagesSvgOnbaord3,
                   ),
                 ),
 

@@ -3,6 +3,7 @@ import 'package:intallek/core/router/app_routes.dart';
 import 'package:intallek/features/auth/login/views/login_screen.dart';
 import 'package:intallek/features/auth/register/views/register_page.dart';
 import 'package:intallek/features/auth/verification/views/verification_page.dart';
+import 'package:intallek/features/client_app/navigation_bar/app_navigation_bar.dart';
 import 'package:intallek/features/onboarding/views/onboarding_screen.dart';
 import 'package:intallek/features/splash/views/splash_screen.dart';
 
@@ -34,6 +35,11 @@ class RouterGenerationConfig {
         path: AppRoutes.verificationPage,
         name: AppRoutes.verificationPage,
         builder: (context, state) => const VerificationPage(),
+      ),
+       GoRoute(
+        path: AppRoutes.appNavigationBar,
+        name: AppRoutes.appNavigationBar,
+        builder: (context, state) => const AppNavigationBar(),
       ),
     ],
   );
