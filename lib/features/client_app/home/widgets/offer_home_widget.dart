@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intallek/core/l10n/s.dart';
@@ -7,9 +6,7 @@ import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/core/theme/values.dart';
 
 class OfferHomeWidget extends StatelessWidget {
-  const OfferHomeWidget({
-    super.key,
-  });
+  const OfferHomeWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -48,9 +45,7 @@ class OfferHomeWidget extends StatelessWidget {
               ),
             ),
           ),
-          Flexible(
-            child: Image.asset(Assets.imagesPngOffer, height: 100.h),
-          ),
+          Flexible(child: Image.asset(Assets.imagesPngOffer, height: 100.h)),
         ],
       ),
     );

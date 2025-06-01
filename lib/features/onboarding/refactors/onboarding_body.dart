@@ -59,7 +59,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
                     ),
                   ),
                   child: SvgImage(
-                    height: 235.h,
+                    height: 215.h,
                     imagePath: index == 0
                         ? Assets.imagesSvgOnbaord1
                         : index == 1

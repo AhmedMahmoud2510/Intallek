@@ -5,6 +5,7 @@ import 'package:intallek/core/theme/assets.dart';
 import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/core/theme/text_styles.dart';
 import 'package:intallek/core/widgets/svg_image_widget.dart';
+import 'package:intallek/features/client_app/activity/activity_page.dart';
 import 'package:intallek/features/client_app/home/home_page.dart';
 
 class AppNavigationBar extends StatefulWidget {
@@ -16,7 +17,11 @@ class AppNavigationBar extends StatefulWidget {
 
 class _AppNavigationBarState extends State<AppNavigationBar> {
   int _currentIndex = 0;
-  List<Widget> pages = [const HomePage(), const SizedBox(), const SizedBox()];
+  List<Widget> pages = [
+    const HomePage(),
+    const ActivityPage(),
+    const SizedBox(),
+  ];
   List<String> selectedIcon = [
     Assets.imagesIconsHome,
     Assets.imagesIconsAnalys,
@@ -34,7 +39,11 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    itemName = [S.of(context)!.home, S.of(context)!.activity, S.of(context)!.profile];
+    itemName = [
+      S.of(context)!.home,
+      S.of(context)!.activity,
+      S.of(context)!.profile,
+    ];
   }
 
   @override

@@ -324,6 +324,18 @@ abstract class S {
   /// In en, this message translates to:
   /// **'Book your first trip for free with….'**
   String get offer;
+
+  /// No description provided for @upcoming.
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming'**
+  String get upcoming;
+
+  /// No description provided for @past.
+  ///
+  /// In en, this message translates to:
+  /// **'Past'**
+  String get past;
 }
 
 class _SDelegate extends LocalizationsDelegate<S> {

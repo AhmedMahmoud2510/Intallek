@@ -125,4 +125,10 @@ class SEn extends S {
 
   @override
   String get offer => 'Book your first trip for free with….';
+
+  @override
+  String get upcoming => 'Upcoming';
+
+  @override
+  String get past => 'Past';
 }

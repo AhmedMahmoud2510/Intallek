@@ -45,88 +45,96 @@ class _LoginBodyState extends State<LoginBody> {
   final formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16.w),
-      child: SingleChildScrollView(
-        child: Form(
-          key: formKey,
-          child: Column(
-            children: [
-              40.verticalSpace,
-              HeaderTitleTextfield(text: S.of(context)!.phoneNumber),
-              10.verticalSpace,
-              CustomPrimaryTextfield(
-                controller: _phoneNo,
-                focusNode: _phoneNoFocusNode,
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return '${S.of(context)!.phoneNumber} ${S.of(context)!.missing}';
-                  }
-                  return null;
-                },
-              ),
-              20.verticalSpace,
-              HeaderTitleTextfield(text: S.of(context)!.password),
-              10.verticalSpace,
-              CustomPrimaryTextfield(
-                controller: _password,
-                focusNode: _passwordFocusNode,
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return '${S.of(context)!.password} ${S.of(context)!.missing}';
-                  }
-                  return null;
-                },
-                isPassword: isPassword,
-                suffix: IconButton(
-                  onPressed: () => setState(() {
-                    isPassword = !isPassword;
-                  }),
-                  icon: isPassword
-                      ? const Icon(
-                          Icons.visibility,
-                          color: AppColors.secondaryColor,
-                        )
-                      : const Icon(
-                          Icons.visibility_off,
-                          color: AppColors.secondaryColor,
-                        ),
+    return AutofillGroup(
+      child: Form(
+        key: formKey,
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16.w),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                40.verticalSpace,
+                HeaderTitleTextfield(text: S.of(context)!.phoneNumber),
+                10.verticalSpace,
+                CustomPrimaryTextfield(
+                  controller: _phoneNo,
+                  focusNode: _phoneNoFocusNode,
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return '${S.of(context)!.phoneNumber} ${S.of(context)!.missing}';
+                    }
+                    return null;
+                  },
+                  textInputAction: TextInputAction.next,
+                  autofillHints: const [AutofillHints.telephoneNumber],
                 ),
-              ),
-              86.verticalSpace,
-              CustomPrimaryBotton(
-                text: S.of(context)!.signIn,
-                onPressed: () {
-                  if (formKey.currentState!.validate()) {
-                    /// TODO
-                    GoRouter.of(context).pushNamed(AppRoutes.verificationPage);
-                  }
-                },
-              ),
-              8.verticalSpace,
-              Row(
-                spacing: 8.w,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    S.of(context)!.noAccountYet,
-                    textAlign: TextAlign.center,
-                    style: AppStyle.thinTextStyle,
+                20.verticalSpace,
+                HeaderTitleTextfield(text: S.of(context)!.password),
+                10.verticalSpace,
+                CustomPrimaryTextfield(
+                  controller: _password,
+                  focusNode: _passwordFocusNode,
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return '${S.of(context)!.password} ${S.of(context)!.missing}';
+                    }
+                    return null;
+                  },
+                  textInputAction: TextInputAction.done,
+                  autofillHints: const [AutofillHints.password],
+                  isPassword: isPassword,
+                  suffix: IconButton(
+                    onPressed: () => setState(() {
+                      isPassword = !isPassword;
+                    }),
+                    icon: isPassword
+                        ? const Icon(
+                            Icons.visibility,
+                            color: AppColors.secondaryColor,
+                          )
+                        : const Icon(
+                            Icons.visibility_off,
+                            color: AppColors.secondaryColor,
+                          ),
                   ),
-                  InkWell(
-                    onTap: () => GoRouter.of(
-                      context,
-                    ).pushNamed(AppRoutes.registerScreen),
-                    child: Text(
-                      S.of(context)!.signUp,
+                ),
+                86.verticalSpace,
+                CustomPrimaryBotton(
+                  text: S.of(context)!.signIn,
+                  onPressed: () {
+                    if (formKey.currentState!.validate()) {
+                      /// TODO
+                      GoRouter.of(
+                        context,
+                      ).pushNamed(AppRoutes.verificationPage);
+                    }
+                  },
+                ),
+                8.verticalSpace,
+                Row(
+                  spacing: 8.w,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      S.of(context)!.noAccountYet,
                       textAlign: TextAlign.center,
-                      style: AppStyle.black16W700Style,
+                      style: AppStyle.thinTextStyle,
                     ),
-                  ),
-                ],
-              ),
-              24.verticalSpace,
-            ],
+                    InkWell(
+                      onTap: () => GoRouter.of(
+                        context,
+                      ).pushNamed(AppRoutes.registerScreen),
+                      child: Text(
+                        S.of(context)!.signUp,
+                        textAlign: TextAlign.center,
+                        style: AppStyle.black16W700Style,
+                      ),
+                    ),
+                  ],
+                ),
+                24.verticalSpace,
+              ],
+            ),
           ),
         ),
       ),

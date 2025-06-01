@@ -124,4 +124,10 @@ class SAr extends S {
 
   @override
   String get offer => 'احجز رحلتك الأولى مجانًا مع….';
+
+  @override
+  String get upcoming => 'القادمة';
+
+  @override
+  String get past => 'السابقة';
 }

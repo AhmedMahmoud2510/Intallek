@@ -12,13 +12,16 @@ class CustomPrimaryTextfield extends StatelessWidget {
     this.isPassword,
     this.suffix,
     this.validator,
+    this.textInputAction,
+    this.autofillHints,
   });
   final TextEditingController controller;
   final FocusNode focusNode;
   final bool? isPassword;
   final Widget? suffix;
   final String? Function(String?)? validator;
-
+  final TextInputAction? textInputAction;
+  final Iterable<String>? autofillHints;
   @override
   Widget build(BuildContext context) {
     final isFocused = focusNode.hasFocus;
@@ -41,6 +44,9 @@ class CustomPrimaryTextfield extends StatelessWidget {
             ? AppColors.greyColor.withAlpha(25)
             : AppColors.greyColor.withAlpha(200),
       ),
+
+      textInputAction: textInputAction,
+      autofillHints: autofillHints,
     );
   }
 
