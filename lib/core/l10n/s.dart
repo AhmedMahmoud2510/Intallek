@@ -133,6 +133,12 @@ abstract class S {
   /// **'Go'**
   String get go;
 
+  /// No description provided for @verify.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify'**
+  String get verify;
+
   /// No description provided for @welcomeBack.
   ///
   /// In en, this message translates to:

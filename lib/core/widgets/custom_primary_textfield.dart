@@ -35,7 +35,7 @@ class CustomPrimaryTextfield extends StatelessWidget {
         focusedBorder: customOutlineInputBorder(),
         enabledBorder: customOutlineInputBorder(),
         suffixIcon: suffix,
-        contentPadding: EdgeInsets.symmetric(horizontal: 10.w),
+        contentPadding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 8.h),
         filled: true,
         fillColor: isFocused
             ? AppColors.greyColor.withAlpha(25)

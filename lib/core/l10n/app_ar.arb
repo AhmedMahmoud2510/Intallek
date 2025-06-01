@@ -6,12 +6,13 @@
   "next": "التالي",
   "skip": "تخطي",
   "go": "انطلق",
+  "verify": "تحقق",
   "welcomeBack": "مرحبا بعودتك",
   "phoneNumber": "رقم الجوال",
   "password": "كلمة المرور",
   "signIn": "تسجيل الدخول",
   "noAccountYet": "ليس لديك حساب؟",
-  "signUp": "إنشاء حساب جديد",
+  "signUp": "تسجيل",
   "createYourAccount": "انشاء حساب جديد",
   "name": "الاسم",
   "reTypePassword": "إعادة كلمة المرور",
@@ -20,6 +21,7 @@
   "youCanCheckYourMessages": "يرجى مراجعة الرسائل",
   "didntReceivedCode": "لم أستقبل الرمز.",
   "sendAgain": "إعادة إرسال؟",
-  "missing": "مفقود!", "haveAnAccount": "لديك حساب بالفعل؟",
-    "passwordDoesntMatch":"كلمة المرور غير متطابقة"
+  "missing": "مفقود!",
+  "haveAnAccount": "لديك حساب بالفعل؟",
+  "passwordDoesntMatch": "كلمة المرور غير متطابقة"
 }

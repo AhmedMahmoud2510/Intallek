@@ -30,6 +30,9 @@ class SEn extends S {
   String get go => 'Go';
 
   @override
+  String get verify => 'Verify';
+
+  @override
   String get welcomeBack => 'welcome back';
 
   @override

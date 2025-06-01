@@ -30,7 +30,7 @@ class AppStyle {
   );
   static TextStyle thinTextStyle = TextStyle(
     fontSize: 16.sp,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w400,
     color: AppColors.forthColor,
   );
 }

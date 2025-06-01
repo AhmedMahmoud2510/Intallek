@@ -30,6 +30,9 @@ class SAr extends S {
   String get go => 'انطلق';
 
   @override
+  String get verify => 'تحقق';
+
+  @override
   String get welcomeBack => 'مرحبا بعودتك';
 
   @override
@@ -45,7 +48,7 @@ class SAr extends S {
   String get noAccountYet => 'ليس لديك حساب؟';
 
   @override
-  String get signUp => 'إنشاء حساب جديد';
+  String get signUp => 'تسجيل';
 
   @override
   String get createYourAccount => 'انشاء حساب جديد';

@@ -6,6 +6,7 @@
   "next": "Next",
   "skip": "Skip",
   "go": "Go",
+  "verify": "Verify",
   "welcomeBack": "welcome back",
   "phoneNumber": "Phone Number",
   "password": "Password",
@@ -22,5 +23,5 @@
   "sendAgain": "Send again?",
   "missing": "missing!",
   "haveAnAccount": "Have An account?",
-  "passwordDoesntMatch":"Password does not match"
+  "passwordDoesntMatch": "Password does not match"
 }

@@ -8,7 +8,7 @@ class AppColors {
   static const successColor = Color(0xff00C846);
   static const greyColor = Color(0xffEEEDEB);
   static const lightGreyColor = Color(0xffcccccc);
-  static const darkGreyColor = Color(0xff939185);
+  static const darkGreyColor = Color(0xff8C8983);
   static const errorColor = Color(0xFFFF2727);
   static const Color scaffoldBackgroundLight = Colors.white;
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:intallek/features/auth/verification/widgets/verification_body.dart';
+import 'package:intallek/features/auth/verification/refactors/verification_body.dart';
 
 class VerificationPage extends StatelessWidget {
   const VerificationPage({super.key});
