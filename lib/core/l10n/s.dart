@@ -240,6 +240,90 @@ abstract class S {
   /// In en, this message translates to:
   /// **'Password does not match'**
   String get passwordDoesntMatch;
+
+  /// No description provided for @hey.
+  ///
+  /// In en, this message translates to:
+  /// **'Hey'**
+  String get hey;
+
+  /// No description provided for @service.
+  ///
+  /// In en, this message translates to:
+  /// **'Service'**
+  String get service;
+
+  /// No description provided for @ride.
+  ///
+  /// In en, this message translates to:
+  /// **'Ride'**
+  String get ride;
+
+  /// No description provided for @delivery.
+  ///
+  /// In en, this message translates to:
+  /// **'Delivery'**
+  String get delivery;
+
+  /// No description provided for @home.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get home;
+
+  /// No description provided for @activity.
+  ///
+  /// In en, this message translates to:
+  /// **'Activity'**
+  String get activity;
+
+  /// No description provided for @profile.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get profile;
+
+  /// No description provided for @complain.
+  ///
+  /// In en, this message translates to:
+  /// **'Complain'**
+  String get complain;
+
+  /// No description provided for @privacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get privacyPolicy;
+
+  /// No description provided for @language.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get language;
+
+  /// No description provided for @help.
+  ///
+  /// In en, this message translates to:
+  /// **'Help'**
+  String get help;
+
+  /// No description provided for @signOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Out'**
+  String get signOut;
+
+  /// No description provided for @yourFirstRideOn.
+  ///
+  /// In en, this message translates to:
+  /// **'Your first ride is on us!'**
+  String get yourFirstRideOn;
+
+  /// No description provided for @offer.
+  ///
+  /// In en, this message translates to:
+  /// **'Book your first trip for free with….'**
+  String get offer;
 }
 
 class _SDelegate extends LocalizationsDelegate<S> {

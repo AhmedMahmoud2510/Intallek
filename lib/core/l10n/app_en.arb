@@ -23,5 +23,19 @@
   "sendAgain": "Send again?",
   "missing": "missing!",
   "haveAnAccount": "Have An account?",
-  "passwordDoesntMatch": "Password does not match"
+  "passwordDoesntMatch": "Password does not match",
+  "hey": "Hey",
+  "service": "Service",
+  "ride": "Ride",
+  "delivery": "Delivery",
+  "home": "Home",
+  "activity": "Activity",
+  "profile": "Profile",
+  "complain": "Complain",
+  "privacyPolicy": "Privacy Policy",
+  "language": "Language",
+  "help": "Help",
+  "signOut": "Sign Out",
+  "yourFirstRideOn": "Your first ride is on us!",
+  "offer": "Book your first trip for free with…."
 }

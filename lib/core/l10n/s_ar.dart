@@ -82,4 +82,46 @@ class SAr extends S {
 
   @override
   String get passwordDoesntMatch => 'كلمة المرور غير متطابقة';
+
+  @override
+  String get hey => 'مرحبًا';
+
+  @override
+  String get service => 'خدمات';
+
+  @override
+  String get ride => 'طلب سيارة';
+
+  @override
+  String get delivery => 'توصيل طلبات';
+
+  @override
+  String get home => 'الرئيسية';
+
+  @override
+  String get activity => 'الأنشطة';
+
+  @override
+  String get profile => 'حسابي';
+
+  @override
+  String get complain => 'الشكاوى';
+
+  @override
+  String get privacyPolicy => 'سياسة الخصوصية';
+
+  @override
+  String get language => 'اللغة';
+
+  @override
+  String get help => 'المساعدة';
+
+  @override
+  String get signOut => 'تسجيل الخروج';
+
+  @override
+  String get yourFirstRideOn => 'أول تجربة علينا!';
+
+  @override
+  String get offer => 'احجز رحلتك الأولى مجانًا مع….';
 }

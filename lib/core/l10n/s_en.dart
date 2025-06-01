@@ -83,4 +83,46 @@ class SEn extends S {
 
   @override
   String get passwordDoesntMatch => 'Password does not match';
+
+  @override
+  String get hey => 'Hey';
+
+  @override
+  String get service => 'Service';
+
+  @override
+  String get ride => 'Ride';
+
+  @override
+  String get delivery => 'Delivery';
+
+  @override
+  String get home => 'Home';
+
+  @override
+  String get activity => 'Activity';
+
+  @override
+  String get profile => 'Profile';
+
+  @override
+  String get complain => 'Complain';
+
+  @override
+  String get privacyPolicy => 'Privacy Policy';
+
+  @override
+  String get language => 'Language';
+
+  @override
+  String get help => 'Help';
+
+  @override
+  String get signOut => 'Sign Out';
+
+  @override
+  String get yourFirstRideOn => 'Your first ride is on us!';
+
+  @override
+  String get offer => 'Book your first trip for free with….';
 }

@@ -23,5 +23,19 @@
   "sendAgain": "إعادة إرسال؟",
   "missing": "مفقود!",
   "haveAnAccount": "لديك حساب بالفعل؟",
-  "passwordDoesntMatch": "كلمة المرور غير متطابقة"
+  "passwordDoesntMatch": "كلمة المرور غير متطابقة",
+  "hey": "مرحبًا",
+  "service": "خدمات",
+  "ride": "طلب سيارة",
+  "delivery": "توصيل طلبات",
+  "home": "الرئيسية",
+  "activity": "الأنشطة",
+  "profile": "حسابي",
+  "complain": "الشكاوى",
+  "privacyPolicy": "سياسة الخصوصية",
+  "language": "اللغة",
+  "help": "المساعدة",
+  "signOut": "تسجيل الخروج",
+  "yourFirstRideOn": "أول تجربة علينا!",
+  "offer": "احجز رحلتك الأولى مجانًا مع…."
 }
