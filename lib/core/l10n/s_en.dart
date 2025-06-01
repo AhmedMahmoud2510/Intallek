@@ -131,4 +131,7 @@ class SEn extends S {
 
   @override
   String get past => 'Past';
+
+  @override
+  String get edit => 'Edit';
 }

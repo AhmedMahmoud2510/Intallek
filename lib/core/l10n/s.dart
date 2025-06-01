@@ -336,6 +336,12 @@ abstract class S {
   /// In en, this message translates to:
   /// **'Past'**
   String get past;
+
+  /// No description provided for @edit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get edit;
 }
 
 class _SDelegate extends LocalizationsDelegate<S> {

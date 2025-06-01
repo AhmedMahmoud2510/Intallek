@@ -7,6 +7,7 @@ import 'package:intallek/core/theme/text_styles.dart';
 import 'package:intallek/core/widgets/svg_image_widget.dart';
 import 'package:intallek/features/client_app/activity/activity_page.dart';
 import 'package:intallek/features/client_app/home/home_page.dart';
+import 'package:intallek/features/client_app/profile/profile_page.dart';
 
 class AppNavigationBar extends StatefulWidget {
   const AppNavigationBar({super.key});
@@ -20,7 +21,7 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
   List<Widget> pages = [
     const HomePage(),
     const ActivityPage(),
-    const SizedBox(),
+    const ProfilePage(),
   ];
   List<String> selectedIcon = [
     Assets.imagesIconsHome,

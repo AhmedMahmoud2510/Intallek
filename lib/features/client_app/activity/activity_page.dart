@@ -46,7 +46,7 @@ class ActivityPage extends StatelessWidget {
               S.of(context)!.upcoming,
               style: AppStyle.black20W700Style.copyWith(
                 decoration: TextDecoration.underline,
-                height: 1.58.h,
+                height: 1.6.h,
               ),
             ),
             20.verticalSpace,

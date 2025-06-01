@@ -130,4 +130,7 @@ class SAr extends S {
 
   @override
   String get past => 'السابقة';
+
+  @override
+  String get edit => 'تعديل';
 }
