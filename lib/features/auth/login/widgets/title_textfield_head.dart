@@ -6,6 +6,6 @@ class HeaderTitleTextfield extends StatelessWidget {
   final String text;
   @override
   Widget build(BuildContext context) {
-    return Row(children: [Text(text, style: AppStyle.labelMediumTextStyle)]);
+    return Row(children: [Text(text, style: AppStyle.black16W500Style)]);
   }
 }

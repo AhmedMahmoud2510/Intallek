@@ -55,7 +55,9 @@ class _CustomTimerWidgetState extends State<CustomTimerWidget> {
       children: [
         Text(
           '00:${timeLeft.toString().padLeft(2, '0')}',
-          style: AppStyle.thinTextStyle.copyWith(color: AppColors.primaryColor),
+          style: AppStyle.black16W400Style.copyWith(
+            color: AppColors.primaryColor,
+          ),
         ),
         InkWell(
           onTap: isButtonDisabled
@@ -72,7 +74,7 @@ class _CustomTimerWidgetState extends State<CustomTimerWidget> {
           child: Text(
             S.of(context)!.weSendVerificationCTo,
             textAlign: TextAlign.center,
-            style: AppStyle.thinTextStyle,
+            style: AppStyle.black16W400Style,
           ),
         ),
         Row(
@@ -80,13 +82,13 @@ class _CustomTimerWidgetState extends State<CustomTimerWidget> {
           children: [
             Text(
               'xxxxxxxxxx321',
-              style: AppStyle.thinTextStyle.copyWith(
+              style: AppStyle.black16W400Style.copyWith(
                 color: AppColors.primaryColor,
               ),
             ),
             Text(
               S.of(context)!.youCanCheckYourMessages,
-              style: AppStyle.thinTextStyle,
+              style: AppStyle.black16W400Style,
             ),
           ],
         ),

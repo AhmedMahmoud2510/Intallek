@@ -18,17 +18,22 @@ class AppStyle {
     fontWeight: FontWeight.w400,
     color: AppColors.secondaryColor,
   );
+  static TextStyle black14W500Style = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: AppColors.forthColor,
+  );
   static TextStyle headBoldTextStyle = TextStyle(
     fontSize: 20.sp,
     fontWeight: FontWeight.w800,
     color: AppColors.forthColor,
   );
-  static TextStyle labelMediumTextStyle = TextStyle(
+  static TextStyle black16W500Style = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.w500,
     color: AppColors.forthColor,
   );
-  static TextStyle thinTextStyle = TextStyle(
+  static TextStyle black16W400Style = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.w400,
     color: AppColors.forthColor,

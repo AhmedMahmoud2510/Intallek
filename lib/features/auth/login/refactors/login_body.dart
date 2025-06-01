@@ -118,7 +118,7 @@ class _LoginBodyState extends State<LoginBody> {
                     Text(
                       S.of(context)!.noAccountYet,
                       textAlign: TextAlign.center,
-                      style: AppStyle.thinTextStyle,
+                      style: AppStyle.black16W400Style,
                     ),
                     InkWell(
                       onTap: () => GoRouter.of(

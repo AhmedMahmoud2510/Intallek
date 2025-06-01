@@ -10,7 +10,7 @@ class Appthemes {
     fontFamily: AppFonts.kPrimaryFont,
     textTheme: TextTheme(
       titleLarge: AppStyle.headBoldTextStyle,
-      titleMedium: AppStyle.labelMediumTextStyle,
+      titleMedium: AppStyle.black16W500Style,
     ),
     appBarTheme: const AppBarTheme(backgroundColor: AppColors.primaryColor),
   );

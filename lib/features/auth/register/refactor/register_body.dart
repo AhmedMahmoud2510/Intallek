@@ -177,7 +177,7 @@ class _RegisterBodyState extends State<RegisterBody> {
                     Text(
                       S.of(context)!.haveAnAccount,
                       textAlign: TextAlign.center,
-                      style: AppStyle.thinTextStyle,
+                      style: AppStyle.black16W400Style,
                     ),
                     InkWell(
                       onTap: () => GoRouter.of(context).pop(),

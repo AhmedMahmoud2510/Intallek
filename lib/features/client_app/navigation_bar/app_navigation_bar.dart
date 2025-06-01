@@ -88,8 +88,6 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
             fontWeight: FontWeight.w500,
           ),
           unselectedLabelStyle: AppStyle.navigationBarTextStyle,
-          elevation: 0,
-
           items: [
             /// Home button
             BottomNavigationBarItem(

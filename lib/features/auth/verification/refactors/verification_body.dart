@@ -77,7 +77,7 @@ class _VerificationBodyState extends State<VerificationBody> {
                   child: Text(
                     S.of(context)!.sendAgain,
                     textAlign: TextAlign.center,
-                    style: AppStyle.labelMediumTextStyle.copyWith(
+                    style: AppStyle.black16W500Style.copyWith(
                       color: AppColors.darkGreyColor,
                     ),
                   ),
