@@ -7,7 +7,7 @@ import 'package:intallek/core/theme/values.dart';
 class CustomPrimaryTextfield extends StatelessWidget {
   const CustomPrimaryTextfield({
     required this.controller,
-    required this.focusNode,
+    this.focusNode,
     super.key,
     this.isPassword,
     this.suffix,
@@ -16,7 +16,7 @@ class CustomPrimaryTextfield extends StatelessWidget {
     this.autofillHints,
   });
   final TextEditingController controller;
-  final FocusNode focusNode;
+  final FocusNode? focusNode;
   final bool? isPassword;
   final Widget? suffix;
   final String? Function(String?)? validator;
@@ -24,7 +24,7 @@ class CustomPrimaryTextfield extends StatelessWidget {
   final Iterable<String>? autofillHints;
   @override
   Widget build(BuildContext context) {
-    final isFocused = focusNode.hasFocus;
+    final isFocused = focusNode?.hasFocus;
     return TextFormField(
       style: AppStyle.gray14W400Style,
       textAlign: TextAlign.center,
@@ -40,7 +40,7 @@ class CustomPrimaryTextfield extends StatelessWidget {
         suffixIcon: suffix,
         contentPadding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 8.h),
         filled: true,
-        fillColor: isFocused
+        fillColor: (isFocused ?? false)
             ? AppColors.greyColor.withAlpha(25)
             : AppColors.greyColor.withAlpha(200),
       ),
