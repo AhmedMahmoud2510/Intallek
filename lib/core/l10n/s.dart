@@ -342,6 +342,204 @@ abstract class S {
   /// In en, this message translates to:
   /// **'Edit'**
   String get edit;
+
+  /// No description provided for @whereTo.
+  ///
+  /// In en, this message translates to:
+  /// **'Where To?'**
+  String get whereTo;
+
+  /// No description provided for @deleteAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Account'**
+  String get deleteAccount;
+
+  /// No description provided for @firstName.
+  ///
+  /// In en, this message translates to:
+  /// **'First name'**
+  String get firstName;
+
+  /// No description provided for @lastName.
+  ///
+  /// In en, this message translates to:
+  /// **'Last name'**
+  String get lastName;
+
+  /// No description provided for @savedPlaces.
+  ///
+  /// In en, this message translates to:
+  /// **'Saved places'**
+  String get savedPlaces;
+
+  /// No description provided for @packageNotMore.
+  ///
+  /// In en, this message translates to:
+  /// **'Package not more than 5 kilo'**
+  String get packageNotMore;
+
+  /// No description provided for @deliveryPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Delivery Price'**
+  String get deliveryPrice;
+
+  /// No description provided for @numberOfItems.
+  ///
+  /// In en, this message translates to:
+  /// **'Number of items'**
+  String get numberOfItems;
+
+  /// No description provided for @item.
+  ///
+  /// In en, this message translates to:
+  /// **'item'**
+  String get item;
+
+  /// No description provided for @items.
+  ///
+  /// In en, this message translates to:
+  /// **'items'**
+  String get items;
+
+  /// No description provided for @paymentMethod.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment method'**
+  String get paymentMethod;
+
+  /// No description provided for @visa.
+  ///
+  /// In en, this message translates to:
+  /// **'Visa'**
+  String get visa;
+
+  /// No description provided for @findDelivery.
+  ///
+  /// In en, this message translates to:
+  /// **'Find Delivery'**
+  String get findDelivery;
+
+  /// No description provided for @request.
+  ///
+  /// In en, this message translates to:
+  /// **'Request'**
+  String get request;
+
+  /// No description provided for @findYourDelivery.
+  ///
+  /// In en, this message translates to:
+  /// **'Find Your Delivery'**
+  String get findYourDelivery;
+
+  /// No description provided for @sender.
+  ///
+  /// In en, this message translates to:
+  /// **'Sender'**
+  String get sender;
+
+  /// No description provided for @recipient.
+  ///
+  /// In en, this message translates to:
+  /// **'Recipient'**
+  String get recipient;
+
+  /// No description provided for @startLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Location'**
+  String get startLocation;
+
+  /// No description provided for @yourDestination.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Destination'**
+  String get yourDestination;
+
+  /// No description provided for @done.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get done;
+
+  /// No description provided for @driverVeryGood.
+  ///
+  /// In en, this message translates to:
+  /// **'DriverVeryGood'**
+  String get driverVeryGood;
+
+  /// No description provided for @note.
+  ///
+  /// In en, this message translates to:
+  /// **'Note'**
+  String get note;
+
+  /// No description provided for @driver.
+  ///
+  /// In en, this message translates to:
+  /// **'Driver'**
+  String get driver;
+
+  /// No description provided for @rideRating.
+  ///
+  /// In en, this message translates to:
+  /// **'Ride rating'**
+  String get rideRating;
+
+  /// No description provided for @noRecentRideFeedback.
+  ///
+  /// In en, this message translates to:
+  /// **'No recent ride feedback'**
+  String get noRecentRideFeedback;
+
+  /// No description provided for @stars.
+  ///
+  /// In en, this message translates to:
+  /// **'Stars'**
+  String get stars;
+
+  /// No description provided for @totalRating.
+  ///
+  /// In en, this message translates to:
+  /// **'Total rating'**
+  String get totalRating;
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// No description provided for @ridePrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Ride price'**
+  String get ridePrice;
+
+  /// No description provided for @sar.
+  ///
+  /// In en, this message translates to:
+  /// **'SAR'**
+  String get sar;
+
+  /// No description provided for @min.
+  ///
+  /// In en, this message translates to:
+  /// **'min'**
+  String get min;
+
+  /// No description provided for @carDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Car details'**
+  String get carDetails;
+
+  /// No description provided for @rideDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Ride details'**
+  String get rideDetails;
 }
 
 class _SDelegate extends LocalizationsDelegate<S> {

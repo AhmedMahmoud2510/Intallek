@@ -39,5 +39,41 @@
   "yourFirstRideOn": "أول تجربة علينا!",
   "offer": "احجز رحلتك الأولى مجانًا مع….",
 
-   "upcoming":"القادمة","past":"السابقة","edit":"تعديل"
+   "upcoming":"القادمة","past":"السابقة","edit":"تعديل",
+
+
+   "whereTo":"Where To?",
+   "deleteAccount":"Delete Account",
+   "firstName":"First name",
+   "lastName":"Last name",
+   "savedPlaces":"Saved places",
+   "packageNotMore":"Package not more than 5 kilo",
+   "deliveryPrice":"Delivery Price",
+   "numberOfItems":"Number of items",
+   "item":"item",
+   "items":"items",
+   "paymentMethod":"Payment method",
+   "visa":"Visa",
+   "findDelivery":"Find Delivery",
+   "request":"Request",
+   "findYourDelivery":"Find Your Delivery",
+   "sender":"Sender",
+   "recipient":"Recipient",
+   "startLocation":"Start Location",
+   "yourDestination":"Your Destination",
+   "done":"Done",
+   "driverVeryGood":"DriverVeryGood",
+   "note":"Note",
+   "driver":"Driver",
+   "rideRating":"Ride rating",
+   "noRecentRideFeedback":"No recent ride feedback",
+   "stars":"Stars",
+   "totalRating":"Total rating",
+   "cancel":"Cancel",
+   "ridePrice":"Ride price",
+   "sar":"SAR",
+   "min":"min",
+   "carDetails":"Car details",
+   "rideDetails":"Ride details"
+
 }

@@ -58,9 +58,9 @@ class ProfilePage extends StatelessWidget {
           20.verticalSpace, //50
           CustomPrimaryBotton(text: S.of(context)!.activity, onPressed: () {}),
           20.verticalSpace,
-          Text('First name', style: AppStyle.black16W700Style),
+          Text(S.of(context)!.firstName, style: AppStyle.black16W700Style),
           Text('Ahmed', style: AppStyle.gray14W400Style),
-          Text('Last name', style: AppStyle.black16W700Style),
+          Text(S.of(context)!.lastName, style: AppStyle.black16W700Style),
           Text('Mahmoud', style: AppStyle.gray14W400Style),
           Text(S.of(context)!.phoneNumber, style: AppStyle.black16W700Style),
           Text('05051612412', style: AppStyle.gray14W400Style),
@@ -69,7 +69,10 @@ class ProfilePage extends StatelessWidget {
             spacing: 12.w,
             children: [
               const Icon(Icons.delete_outlined),
-              Text('Delete Account', style: AppStyle.black16W700Style),
+              Text(
+                S.of(context)!.deleteAccount,
+                style: AppStyle.black16W700Style,
+              ),
             ],
           ),
         ],

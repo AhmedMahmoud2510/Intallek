@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:intallek/core/l10n/s.dart';
+import 'package:intallek/core/router/app_routes.dart';
 import 'package:intallek/core/theme/assets.dart';
 import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/core/theme/text_styles.dart';
@@ -12,31 +14,34 @@ class RideButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          height: 147.h,
-          decoration: BoxDecoration(
-            color: AppColors.thirdColor,
-            borderRadius: BorderRadius.vertical(
-              top: Radius.circular(AppValues.radius),
+    return InkWell(
+      onTap: () => GoRouter.of(context).pushNamed(AppRoutes.ridePage),
+      child: Column(
+        children: [
+          Container(
+            height: 147.h,
+            decoration: BoxDecoration(
+              color: AppColors.thirdColor,
+              borderRadius: BorderRadius.vertical(
+                top: Radius.circular(AppValues.radius),
+              ),
             ),
+            alignment: Alignment.center,
+            child: SvgImage(imagePath: Assets.imagesSvgCar, height: 74.h),
           ),
-          alignment: Alignment.center,
-          child: SvgImage(imagePath: Assets.imagesSvgCar, height: 74.h),
-        ),
-        Container(
-          height: 54.h,
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            color: AppColors.primaryColor,
-            borderRadius: BorderRadius.vertical(
-              bottom: Radius.circular(AppValues.radius),
+          Container(
+            height: 54.h,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: AppColors.primaryColor,
+              borderRadius: BorderRadius.vertical(
+                bottom: Radius.circular(AppValues.radius),
+              ),
             ),
+            child: Text(S.of(context)!.ride, style: AppStyle.black16W700Style),
           ),
-          child: Text(S.of(context)!.ride, style: AppStyle.black16W700Style),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

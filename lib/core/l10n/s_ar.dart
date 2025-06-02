@@ -133,4 +133,103 @@ class SAr extends S {
 
   @override
   String get edit => 'تعديل';
+
+  @override
+  String get whereTo => 'Where To?';
+
+  @override
+  String get deleteAccount => 'Delete Account';
+
+  @override
+  String get firstName => 'First name';
+
+  @override
+  String get lastName => 'Last name';
+
+  @override
+  String get savedPlaces => 'Saved places';
+
+  @override
+  String get packageNotMore => 'Package not more than 5 kilo';
+
+  @override
+  String get deliveryPrice => 'Delivery Price';
+
+  @override
+  String get numberOfItems => 'Number of items';
+
+  @override
+  String get item => 'item';
+
+  @override
+  String get items => 'items';
+
+  @override
+  String get paymentMethod => 'Payment method';
+
+  @override
+  String get visa => 'Visa';
+
+  @override
+  String get findDelivery => 'Find Delivery';
+
+  @override
+  String get request => 'Request';
+
+  @override
+  String get findYourDelivery => 'Find Your Delivery';
+
+  @override
+  String get sender => 'Sender';
+
+  @override
+  String get recipient => 'Recipient';
+
+  @override
+  String get startLocation => 'Start Location';
+
+  @override
+  String get yourDestination => 'Your Destination';
+
+  @override
+  String get done => 'Done';
+
+  @override
+  String get driverVeryGood => 'DriverVeryGood';
+
+  @override
+  String get note => 'Note';
+
+  @override
+  String get driver => 'Driver';
+
+  @override
+  String get rideRating => 'Ride rating';
+
+  @override
+  String get noRecentRideFeedback => 'No recent ride feedback';
+
+  @override
+  String get stars => 'Stars';
+
+  @override
+  String get totalRating => 'Total rating';
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get ridePrice => 'Ride price';
+
+  @override
+  String get sar => 'SAR';
+
+  @override
+  String get min => 'min';
+
+  @override
+  String get carDetails => 'Car details';
+
+  @override
+  String get rideDetails => 'Ride details';
 }
