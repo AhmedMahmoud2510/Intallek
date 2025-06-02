@@ -19,6 +19,7 @@ class CustomPrimaryTextfield extends StatelessWidget {
     this.text,
     this.style,
     this.readOnly,
+    this.onTap,
   });
   final TextEditingController? controller;
   final FocusNode? focusNode;
@@ -32,11 +33,12 @@ class CustomPrimaryTextfield extends StatelessWidget {
   final String? text;
   final TextStyle? style;
   final bool? readOnly;
-
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     final isFocused = focusNode?.hasFocus;
     return TextFormField(
+      onTap: onTap,
       readOnly: readOnly ?? false,
       style: AppStyle.gray14W400Style,
       textAlign: textAlign ?? TextAlign.center,

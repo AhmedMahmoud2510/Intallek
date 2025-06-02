@@ -150,7 +150,10 @@ class SAr extends S {
   String get savedPlaces => 'Saved places';
 
   @override
-  String get packageNotMore => 'Package not more than 5 kilo';
+  String get packageNotMore => 'Package not more than';
+
+  @override
+  String get kilo5 => '5 kilo';
 
   @override
   String get deliveryPrice => 'Delivery Price';
@@ -232,4 +235,58 @@ class SAr extends S {
 
   @override
   String get rideDetails => 'Ride details';
+
+  @override
+  String get findYourRide => 'Find your ride';
+
+  @override
+  String get availableOptions => 'Available options';
+
+  @override
+  String get economy => 'Economy';
+
+  @override
+  String get stander => 'Stander';
+
+  @override
+  String get vip => 'V.I.P';
+
+  @override
+  String get family => 'Family';
+
+  @override
+  String get familyVIP => 'Family V.I.P';
+
+  @override
+  String get findDriver => 'Find Driver';
+
+  @override
+  String get pickUp => 'Pick up';
+
+  @override
+  String get dropOff => 'Drop off';
+
+  @override
+  String get reportSafetyIssue => 'Report safety issue';
+
+  @override
+  String get haveSafetyRelatedIssue => 'If you have a safety related issue';
+
+  @override
+  String get reportMoneyIssue => 'Report money issue';
+
+  @override
+  String get haveMoneyIssue => 'If you have a money related issue';
+
+  @override
+  String get provideDriverFeedback => 'Provide driver feedback';
+
+  @override
+  String get forDriverArentSafety => 'For driver aren\'t safety';
+
+  @override
+  String get provideCarFeedback => 'Provide car feedback';
+
+  @override
+  String get forCarIssue => 'For car issue';
 }

@@ -8,6 +8,11 @@ class AppStyle {
     fontWeight: FontWeight.w700,
     color: AppColors.forthColor,
   );
+  static TextStyle black18W700Style = TextStyle(
+    fontSize: 18.sp,
+    fontWeight: FontWeight.w700,
+    color: AppColors.forthColor,
+  );
   static TextStyle black16W700Style = TextStyle(
     fontSize: 16.sp,
     fontWeight: FontWeight.w700,

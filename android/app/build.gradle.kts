@@ -28,6 +28,8 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        manifestPlaceholders["MAPS_API_KEY"] =
+            if (project.hasProperty("MAPS_API_KEY")) project.property("MAPS_API_KEY") as String else ""
     }
 
     buildTypes {

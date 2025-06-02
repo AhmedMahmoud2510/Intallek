@@ -376,8 +376,14 @@ abstract class S {
   /// No description provided for @packageNotMore.
   ///
   /// In en, this message translates to:
-  /// **'Package not more than 5 kilo'**
+  /// **'Package not more than'**
   String get packageNotMore;
+
+  /// No description provided for @kilo5.
+  ///
+  /// In en, this message translates to:
+  /// **'5 kilo'**
+  String get kilo5;
 
   /// No description provided for @deliveryPrice.
   ///
@@ -540,6 +546,114 @@ abstract class S {
   /// In en, this message translates to:
   /// **'Ride details'**
   String get rideDetails;
+
+  /// No description provided for @findYourRide.
+  ///
+  /// In en, this message translates to:
+  /// **'Find your ride'**
+  String get findYourRide;
+
+  /// No description provided for @availableOptions.
+  ///
+  /// In en, this message translates to:
+  /// **'Available options'**
+  String get availableOptions;
+
+  /// No description provided for @economy.
+  ///
+  /// In en, this message translates to:
+  /// **'Economy'**
+  String get economy;
+
+  /// No description provided for @stander.
+  ///
+  /// In en, this message translates to:
+  /// **'Stander'**
+  String get stander;
+
+  /// No description provided for @vip.
+  ///
+  /// In en, this message translates to:
+  /// **'V.I.P'**
+  String get vip;
+
+  /// No description provided for @family.
+  ///
+  /// In en, this message translates to:
+  /// **'Family'**
+  String get family;
+
+  /// No description provided for @familyVIP.
+  ///
+  /// In en, this message translates to:
+  /// **'Family V.I.P'**
+  String get familyVIP;
+
+  /// No description provided for @findDriver.
+  ///
+  /// In en, this message translates to:
+  /// **'Find Driver'**
+  String get findDriver;
+
+  /// No description provided for @pickUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Pick up'**
+  String get pickUp;
+
+  /// No description provided for @dropOff.
+  ///
+  /// In en, this message translates to:
+  /// **'Drop off'**
+  String get dropOff;
+
+  /// No description provided for @reportSafetyIssue.
+  ///
+  /// In en, this message translates to:
+  /// **'Report safety issue'**
+  String get reportSafetyIssue;
+
+  /// No description provided for @haveSafetyRelatedIssue.
+  ///
+  /// In en, this message translates to:
+  /// **'If you have a safety related issue'**
+  String get haveSafetyRelatedIssue;
+
+  /// No description provided for @reportMoneyIssue.
+  ///
+  /// In en, this message translates to:
+  /// **'Report money issue'**
+  String get reportMoneyIssue;
+
+  /// No description provided for @haveMoneyIssue.
+  ///
+  /// In en, this message translates to:
+  /// **'If you have a money related issue'**
+  String get haveMoneyIssue;
+
+  /// No description provided for @provideDriverFeedback.
+  ///
+  /// In en, this message translates to:
+  /// **'Provide driver feedback'**
+  String get provideDriverFeedback;
+
+  /// No description provided for @forDriverArentSafety.
+  ///
+  /// In en, this message translates to:
+  /// **'For driver aren\'t safety'**
+  String get forDriverArentSafety;
+
+  /// No description provided for @provideCarFeedback.
+  ///
+  /// In en, this message translates to:
+  /// **'Provide car feedback'**
+  String get provideCarFeedback;
+
+  /// No description provided for @forCarIssue.
+  ///
+  /// In en, this message translates to:
+  /// **'For car issue'**
+  String get forCarIssue;
 }
 
 class _SDelegate extends LocalizationsDelegate<S> {

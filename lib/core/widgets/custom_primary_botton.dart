@@ -28,12 +28,13 @@ class CustomPrimaryBotton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
+        padding: EdgeInsets.zero,
         backgroundColor: color ?? AppColors.primaryColor,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(radius ?? AppValues.radius),
         ),
         fixedSize: Size(
-          width ?? MediaQuery.sizeOf(context).width - 20.w,
+          width ?? MediaQuery.sizeOf(context).width, // - 20.w,
           height ?? AppValues.buttonHeight,
         ),
       ),
@@ -42,6 +43,7 @@ class CustomPrimaryBotton extends StatelessWidget {
         style: TextStyle(
           fontSize: fontSize ?? 16.sp,
           fontWeight: FontWeight.w700,
+          height: 1.h,
           color: fontColor ?? Colors.black,
         ),
       ),

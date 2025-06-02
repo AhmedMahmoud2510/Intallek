@@ -28,6 +28,8 @@ class Assets {
 
   static const String imagesIconsMenu = "assets/images/icons/menu.svg";
 
+  static const String imagesIconsPhoneOutgoing = "assets/images/icons/phoneOutgoing.svg";
+
   static const String imagesIconsProfile = "assets/images/icons/profile.svg";
 
   static const String imagesIconsSavedPlace = "assets/images/icons/saved_place.svg";
@@ -40,9 +42,21 @@ class Assets {
 
   static const String imagesIconsUser = "assets/images/icons/user.svg";
 
+  static const String imagesPngDeliveryBox = "assets/images/png/delivery_box.png";
+
   static const String imagesPngMap = "assets/images/png/map.png";
 
   static const String imagesPngOffer = "assets/images/png/offer.png";
+
+  static const String imagesPngRideTypeEconomyCar = "assets/images/png/ride_type/economyCar.png";
+
+  static const String imagesPngRideTypeFamilyCar = "assets/images/png/ride_type/familyCar.png";
+
+  static const String imagesPngRideTypeFamilyVIPCar = "assets/images/png/ride_type/familyVIPCar.png";
+
+  static const String imagesPngRideTypeStanderCar = "assets/images/png/ride_type/standerCar.png";
+
+  static const String imagesPngRideTypeVipCar = "assets/images/png/ride_type/vipCar.png";
 
   static const String imagesPngSplashLogo = "assets/images/png/splash_logo.png";
 

@@ -47,6 +47,7 @@ flutter:
     - assets/images/png/
     - assets/images/svg/
     - assets/images/icons/
+    - assets/images/png/ride_type/
 flutter_assets:
   assets_path: assets/
   output_path: lib/core/theme/
