@@ -40,6 +40,8 @@ class Assets {
 
   static const String imagesIconsUser = "assets/images/icons/user.svg";
 
+  static const String imagesPngMap = "assets/images/png/map.png";
+
   static const String imagesPngOffer = "assets/images/png/offer.png";
 
   static const String imagesPngSplashLogo = "assets/images/png/splash_logo.png";

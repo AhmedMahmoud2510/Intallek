@@ -6,7 +6,7 @@ import 'package:intallek/core/theme/values.dart';
 
 class CustomPrimaryTextfield extends StatelessWidget {
   const CustomPrimaryTextfield({
-    required this.controller,
+    this.controller,
     this.focusNode,
     super.key,
     this.isPassword,
@@ -14,31 +14,45 @@ class CustomPrimaryTextfield extends StatelessWidget {
     this.validator,
     this.textInputAction,
     this.autofillHints,
+    this.prefix,
+    this.textAlign,
+    this.text,
+    this.style,
+    this.readOnly,
   });
-  final TextEditingController controller;
+  final TextEditingController? controller;
   final FocusNode? focusNode;
   final bool? isPassword;
   final Widget? suffix;
+  final Widget? prefix;
   final String? Function(String?)? validator;
   final TextInputAction? textInputAction;
   final Iterable<String>? autofillHints;
+  final TextAlign? textAlign;
+  final String? text;
+  final TextStyle? style;
+  final bool? readOnly;
+
   @override
   Widget build(BuildContext context) {
     final isFocused = focusNode?.hasFocus;
     return TextFormField(
+      readOnly: readOnly ?? false,
       style: AppStyle.gray14W400Style,
-      textAlign: TextAlign.center,
+      textAlign: textAlign ?? TextAlign.center,
       validator: validator,
       focusNode: focusNode,
       controller: controller,
       cursorColor: AppColors.greyColor,
       obscureText: isPassword ?? false,
       decoration: InputDecoration(
+        hint: Text(text ?? '', style: style ?? AppStyle.black20W700Style),
         border: customOutlineInputBorder(),
         focusedBorder: customOutlineInputBorder(),
         enabledBorder: customOutlineInputBorder(),
         suffixIcon: suffix,
-        contentPadding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 8.h),
+        prefixIcon: prefix,
+        contentPadding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
         filled: true,
         fillColor: (isFocused ?? false)
             ? AppColors.greyColor.withAlpha(25)
