@@ -17,7 +17,7 @@ class ActivityPage extends StatelessWidget {
         orderDate: 'Today',
         fromPlace: 'Jaddah',
         toPlace: 'Madinah',
-        price: '100',
+        price: '90',
         time: '40 min',
       ),
       ActivityCardModel(
@@ -30,72 +30,69 @@ class ActivityPage extends StatelessWidget {
       ActivityCardModel(
         orderDate: 'Today',
         fromPlace: 'Jaddah',
-        toPlace: 'Madinah',
-        price: '100',
-        time: '40 min',
+        toPlace: 'makkah',
+        price: '200',
+        time: '50 min',
       ),
     ];
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 16.w),
-      child: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            20.verticalSpace,
-            Text(
+      child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: Text(
               S.of(context)!.upcoming,
               style: AppStyle.black20W700Style.copyWith(
                 decoration: TextDecoration.underline,
                 height: 1.6.h,
               ),
             ),
-            20.verticalSpace,
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(AppValues.radius),
-                border: Border.all(width: 0.5.w, color: AppColors.outlineColor),
-              ),
-              child: ListView.separated(
-                physics: const NeverScrollableScrollPhysics(),
-                shrinkWrap: true,
-                separatorBuilder: (context, index) => const Divider(),
-                itemCount: 2,
-                itemBuilder: (context, index) {
-                  return Expanded(
-                    child: ItemCardDetailsWidget(card: cards[index]),
-                  );
-                },
-              ),
-            ),
-            20.verticalSpace,
-            Text(
+          ),
+          SliverList.builder(
+            itemCount: 1,
+            itemBuilder: (context, index) {
+              return Container(
+                margin: EdgeInsets.symmetric(vertical: 4.h),
+                height: 112.h,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(AppValues.radius),
+                  border: Border.all(
+                    width: 0.5.w,
+                    color: AppColors.outlineColor,
+                  ),
+                ),
+                child: ItemCardDetailsWidget(card: cards[index]),
+              );
+            },
+          ),
+          SliverToBoxAdapter(
+            child: Text(
               S.of(context)!.past,
               style: AppStyle.black20W700Style.copyWith(
                 decoration: TextDecoration.underline,
                 height: 1.58.h,
               ),
             ),
-            20.verticalSpace,
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(AppValues.radius),
-                border: Border.all(width: 0.5.w, color: AppColors.outlineColor),
-              ),
-              child: ListView.separated(
-                physics: const NeverScrollableScrollPhysics(),
-                shrinkWrap: true,
-                separatorBuilder: (context, index) => const Divider(),
-                itemCount: 3,
-                itemBuilder: (context, index) {
-                  return Expanded(
-                    child: ItemCardDetailsWidget(card: cards[index]),
-                  );
-                },
-              ),
-            ),
-            40.verticalSpace,
-          ],
-        ),
+          ),
+          SliverList.builder(
+            itemCount: cards.length,
+            // separatorBuilder: (_, __) => const Divider(),
+            itemBuilder: (context, index) {
+              return Container(
+                margin: EdgeInsets.symmetric(vertical: 4.h),
+                height: 112.h,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(AppValues.radius),
+                  border: Border.all(
+                    width: 0.5.w,
+                    color: AppColors.outlineColor,
+                  ),
+                ),
+                child: ItemCardDetailsWidget(card: cards[index]),
+              );
+            },
+          ),
+        ],
       ),
     );
   }

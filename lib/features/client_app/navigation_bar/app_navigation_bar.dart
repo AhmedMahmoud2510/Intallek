@@ -7,6 +7,7 @@ import 'package:intallek/core/theme/text_styles.dart';
 import 'package:intallek/core/widgets/svg_image_widget.dart';
 import 'package:intallek/features/client_app/activity/activity_page.dart';
 import 'package:intallek/features/client_app/home/home_page.dart';
+import 'package:intallek/features/client_app/navigation_bar/refactors/appbar/action_menu.dart';
 import 'package:intallek/features/client_app/profile/profile_page.dart';
 
 class AppNavigationBar extends StatefulWidget {
@@ -56,10 +57,8 @@ class _AppNavigationBarState extends State<AppNavigationBar> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(bottom: Radius.circular(16.r)),
         ),
-        leading: IconButton(
-          onPressed: () {},
-          icon: const SvgImage(imagePath: Assets.imagesIconsMenu),
-        ),
+        leading:  homePopupMenuButton(context),
+        
         actions: [
           12.horizontalSpace,
           IconButton(

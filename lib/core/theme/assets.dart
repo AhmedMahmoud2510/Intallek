@@ -46,6 +46,8 @@ class Assets {
 
   static const String imagesPngStar = "assets/images/png/star.png";
 
+  static const String imagesPngUnknownPerson = "assets/images/png/unknownPerson.png";
+
   static const String imagesSvgCar = "assets/images/svg/Car.svg";
 
   static const String imagesSvgEdit = "assets/images/svg/edit.svg";
