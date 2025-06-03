@@ -55,9 +55,16 @@ flutter_assets:
   field_prefix: 
   ignore_comments: true
 
+
   fonts:
     - family: Roboto
       fonts:
         - asset: assets/fonts/roboto/Roboto-Regular.ttf
         - asset: assets/fonts/roboto/Roboto-Medium.ttf
         - asset: assets/fonts/roboto/Roboto-Bold.ttf
+
+    - family: NotoSansArabic
+      fonts:
+        - asset: assets/fonts/notosans/NotoSansArabic-Regular.ttf
+        - asset: assets/fonts/notosans/NotoSansArabic-Medium.ttf
+        - asset: assets/fonts/notosans/NotoSansArabic-Bold.ttf

@@ -28,7 +28,7 @@ class CacheHelper {
     await CacheHelper.saveData(key: CacheKeys.currentLanguage, value: 'ar');
   }
 
-  Future<void> cacheLanguageCode(String languageCode) async {
+  static Future<void> cacheLanguageCode(String languageCode) async {
     await sharedPreferences.setString(CacheKeys.currentLanguage, languageCode);
   }
 

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:intallek/core/theme/assets.dart';
 import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/features/splash/controller/init_splash.dart';
@@ -16,16 +15,6 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     initSplashScreen(context);
-  }
-
-  @override
-  void dispose() {
-    // Restore system UI mode
-    SystemChrome.setEnabledSystemUIMode(
-      SystemUiMode.manual,
-      overlays: SystemUiOverlay.values,
-    );
-    super.dispose();
   }
 
   @override

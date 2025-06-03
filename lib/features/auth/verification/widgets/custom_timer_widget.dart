@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:intallek/core/l10n/s.dart';
 import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/core/theme/text_styles.dart';
 
@@ -48,25 +49,39 @@ class _CustomTimerWidgetState extends State<CustomTimerWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return 
-        
-        InkWell(
-          onTap: isButtonDisabled
-              ? null
-              : () async {
-                  if (!mounted) return;
-                  startTimer();
-                  setState(() {
-                    isButtonDisabled = true;
-                  });
+    return InkWell(
+      onTap: isButtonDisabled
+          ? null
+          : () async {
+              if (!mounted) return;
+              startTimer();
+              setState(() {
+                isButtonDisabled = true;
+              });
 
-                  /// send code
-                },child: Text(
-          '00:${timeLeft.toString().padLeft(2, '0')}',
-          style: AppStyle.black16W400Style.copyWith(
-            color: AppColors.primaryColor,
-          ),
+              /// send code
+            },
+      child: RichText(
+        text: TextSpan(
+          children: [
+            TextSpan(
+              text: S.of(context)!.sendAgain,
+              style: AppStyle.black16W500Style.copyWith(
+                color: isButtonDisabled
+                    ? AppColors.darkGreyColor
+                    : AppColors.primaryColor,
+              ),
+            ),
+            TextSpan(
+              text: ' 00:${timeLeft.toString().padLeft(2, '0')}',
+              style: AppStyle.black16W400Style.copyWith(
+                color: AppColors.primaryColor,
+              ),
+            ),
+          ],
         ),
-        );
+        textAlign: TextAlign.center,
+      ),
+    );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:intallek/core/l10n/s.dart';
 import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/core/theme/text_styles.dart';
 import 'package:intallek/features/client_app/activity/models/activity_card_model.dart';
@@ -65,7 +66,10 @@ class ItemCardDetailsWidget extends StatelessWidget {
                     spacing: 8.w,
                     children: [
                       Text(card.price, style: AppStyle.black16W400Style),
-                      Text('SAR', style: AppStyle.black16W400Style),
+                      Text(
+                        S.of(context)!.sar,
+                        style: AppStyle.black16W400Style,
+                      ),
                     ],
                   ),
                   Row(
@@ -73,6 +77,10 @@ class ItemCardDetailsWidget extends StatelessWidget {
                     children: [
                       const Icon(Icons.timer_outlined),
                       Text(card.time, style: AppStyle.black16W400Style),
+                      Text(
+                        S.of(context)!.min,
+                        style: AppStyle.black16W400Style,
+                      ),
                     ],
                   ),
                 ],

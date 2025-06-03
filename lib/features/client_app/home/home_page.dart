@@ -34,6 +34,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             12.verticalSpace, //20
+
             Row(
               spacing: 18.w,
               children: const [
@@ -41,6 +42,7 @@ class HomePage extends StatelessWidget {
                 Flexible(child: DeliveryButtonWidget()),
               ],
             ),
+
             60.verticalSpace,
           ],
         ),

@@ -142,7 +142,7 @@ abstract class S {
   /// No description provided for @welcomeBack.
   ///
   /// In en, this message translates to:
-  /// **'welcome back'**
+  /// **'Welcome back'**
   String get welcomeBack;
 
   /// No description provided for @phoneNumber.
@@ -214,7 +214,7 @@ abstract class S {
   /// No description provided for @didntReceivedCode.
   ///
   /// In en, this message translates to:
-  /// **'I didn’t received the code.'**
+  /// **'I didn’t received the code'**
   String get didntReceivedCode;
 
   /// No description provided for @sendAgain.
@@ -288,6 +288,12 @@ abstract class S {
   /// In en, this message translates to:
   /// **'Complain'**
   String get complain;
+
+  /// No description provided for @complains.
+  ///
+  /// In en, this message translates to:
+  /// **'Complains'**
+  String get complains;
 
   /// No description provided for @privacyPolicy.
   ///
@@ -505,6 +511,12 @@ abstract class S {
   /// **'Stars'**
   String get stars;
 
+  /// No description provided for @star.
+  ///
+  /// In en, this message translates to:
+  /// **'Star'**
+  String get star;
+
   /// No description provided for @totalRating.
   ///
   /// In en, this message translates to:
@@ -654,6 +666,132 @@ abstract class S {
   /// In en, this message translates to:
   /// **'For car issue'**
   String get forCarIssue;
+
+  /// No description provided for @appPrivacyPolicy.
+  ///
+  /// In en, this message translates to:
+  /// **'Antallak Application Privacy Policy'**
+  String get appPrivacyPolicy;
+
+  /// No description provided for @lastUpdated.
+  ///
+  /// In en, this message translates to:
+  /// **'Last Updated:'**
+  String get lastUpdated;
+
+  /// No description provided for @introduction.
+  ///
+  /// In en, this message translates to:
+  /// **'Introduction'**
+  String get introduction;
+
+  /// No description provided for @introductionText.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to [Antallak], a ride-hailing and package delivery application designed to provide convenient and secure transportation and logistics services. At [Antallak], we prioritize your privacy and are committed to protecting your personal information.\nThis Privacy Policy explains how we collect, use, disclose, and safeguard your data when you use our application and related services. By accessing or using [Antallak], you agree to the terms outlined in this policy. If you do not agree, please refrain from using our services.'**
+  String get introductionText;
+
+  /// No description provided for @informationCollection.
+  ///
+  /// In en, this message translates to:
+  /// **'Information Collection'**
+  String get informationCollection;
+
+  /// No description provided for @informationCollectionText.
+  ///
+  /// In en, this message translates to:
+  /// **'When you use our services, we may collect the following types of information:'**
+  String get informationCollectionText;
+
+  /// No description provided for @personalInformation.
+  ///
+  /// In en, this message translates to:
+  /// **'A. Personal Information'**
+  String get personalInformation;
+
+  /// No description provided for @personalInformationText.
+  ///
+  /// In en, this message translates to:
+  /// **'•\tUser Account Details: Name, email, phone number, profile photo, and payment information.\n•\tRide & Delivery Data: Pickup/drop-off locations, trip history, package details, and recipient information.\n•\tIdentification & Verification: Driver’s license, vehicle details (for drivers), and other verification documents.'**
+  String get personalInformationText;
+
+  /// No description provided for @questions.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions?'**
+  String get questions;
+
+  /// No description provided for @questionsText.
+  ///
+  /// In en, this message translates to:
+  /// **'If you have any questions about this Privacy Policy or our practices, please send us an email at'**
+  String get questionsText;
+
+  /// No description provided for @emailAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Antallak@antallak.com'**
+  String get emailAddress;
+
+  /// No description provided for @usageTechnicalData.
+  ///
+  /// In en, this message translates to:
+  /// **'B. Usage and Technical Data'**
+  String get usageTechnicalData;
+
+  /// No description provided for @usageTechnicalDataText.
+  ///
+  /// In en, this message translates to:
+  /// **'•\tDevice Information: IP address, device model, operating system, and unique identifiers.\n•\tLocation Data: GPS, Wi-Fi networks, and mobile network data to track trips and deliveries.\n•\tData Logs: App usage, interactions, and crash reports.'**
+  String get usageTechnicalDataText;
+
+  /// No description provided for @paymentInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'C. Payment Information'**
+  String get paymentInfo;
+
+  /// No description provided for @paymentInfoText.
+  ///
+  /// In en, this message translates to:
+  /// **'•\tCredit/debit card details, digital wallets, and transaction history (securely processed through third-party service providers).'**
+  String get paymentInfoText;
+
+  /// No description provided for @howWeUseYourInfo.
+  ///
+  /// In en, this message translates to:
+  /// **'How We Use Your Information'**
+  String get howWeUseYourInfo;
+
+  /// No description provided for @howWeUseYourInfoText.
+  ///
+  /// In en, this message translates to:
+  /// **'•\tTo provide, improve, and maintain our services.\n•\tTo facilitate trip bookings and parcel deliveries.\n•\tTo verify user identities and ensure security.\n•\tTo process payments and prevent fraud.\n•\tTo send updates, offers, and respond to inquiries.\n•\tTo comply with legal and regulatory requirements.'**
+  String get howWeUseYourInfoText;
+
+  /// No description provided for @informationSharing.
+  ///
+  /// In en, this message translates to:
+  /// **'Information Sharing'**
+  String get informationSharing;
+
+  /// No description provided for @informationSharingText.
+  ///
+  /// In en, this message translates to:
+  /// **'•\tDrivers / Delivery Partners: Trip or shipment details as needed.\n•\tThird-Party Service Providers: Including payment processors, cloud storage services, and analytics providers.\n•\tLegal Authorities: When required by law or for security reasons.'**
+  String get informationSharingText;
+
+  /// No description provided for @dataSecurity.
+  ///
+  /// In en, this message translates to:
+  /// **'Data Security'**
+  String get dataSecurity;
+
+  /// No description provided for @dataSecurityText.
+  ///
+  /// In en, this message translates to:
+  /// **'•\tWe implement standard security measures such as encryption and access controls to protect your data. However, no system is 100% secure.\n•\tWe strongly encourage you to take your own precautions to protect your information.'**
+  String get dataSecurityText;
 }
 
 class _SDelegate extends LocalizationsDelegate<S> {

@@ -53,20 +53,25 @@ class _VerificationBodyState extends State<VerificationBody> {
               style: AppStyle.black16W400Style,
             ),
 
-            Row(
-              spacing: 6.w,
-              children: [
-                Text(
-                  'xxxxxxxxxx321',
-                  style: AppStyle.black16W400Style.copyWith(
-                    color: AppColors.primaryColor,
-                  ),
+            SizedBox(
+              width: MediaQuery.sizeOf(context).width - 32.w,
+              child: RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(
+                  children: [
+                    TextSpan(
+                      text: 'xxxxxxxxxx321',
+                      style: AppStyle.black16W400Style.copyWith(
+                        color: AppColors.primaryColor,
+                      ),
+                    ),
+                    TextSpan(
+                      text: ' ${S.of(context)!.youCanCheckYourMessages}',
+                      style: AppStyle.black16W400Style,
+                    ),
+                  ],
                 ),
-                Text(
-                  S.of(context)!.youCanCheckYourMessages,
-                  style: AppStyle.black16W400Style,
-                ),
-              ],
+              ),
             ),
 
             10.verticalSpace,
@@ -91,16 +96,7 @@ class _VerificationBodyState extends State<VerificationBody> {
                     color: AppColors.darkGreyColor,
                   ),
                 ),
-                InkWell(
-                  onTap: () {},
-                  child: Text(
-                    S.of(context)!.sendAgain,
-                    textAlign: TextAlign.center,
-                    style: AppStyle.black16W500Style.copyWith(
-                      color: AppColors.darkGreyColor,
-                    ),
-                  ),
-                ),
+
                 const CustomTimerWidget(),
               ],
             ),

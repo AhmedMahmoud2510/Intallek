@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intallek/presentation/app/app_content.dart';
+import 'package:intallek/presentation/app/controllers/locale_cubit/locale_cubit.dart';
 
 /// The root widget of the application that sets up the app's basic structure,
 /// including theme, localization, and state management.
@@ -15,7 +17,10 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return child ?? const SizedBox.shrink();
       },
-      child: const AppContent()
+      child: BlocProvider<LocaleCubit>(
+        create: (context) => LocaleCubit(),
+        child: const AppContent(),
+      ),
     );
   }
 }

@@ -7,8 +7,6 @@ class AppRoutes {
   static const String appNavigationBar = '/appNavigationBar';
   static const String ridePage = '/ridePage';
 
-  static const String selectLocationRidePage = '/selectLocationRidePage';
-  static const String rideDetailsPage = '/rideDetailsPage';
   static const String deliveryPage = '/deliveryPage';
   static const String selectLocationDeliveryPage =
       '/selectLocationDeliveryPage';

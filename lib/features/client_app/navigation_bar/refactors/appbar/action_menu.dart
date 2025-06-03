@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:intallek/core/l10n/s.dart';
+import 'package:intallek/core/router/app_routes.dart';
 import 'package:intallek/core/theme/assets.dart';
 import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/core/theme/text_styles.dart';
 import 'package:intallek/core/widgets/svg_image_widget.dart';
+import 'package:intallek/presentation/app/controllers/locale_cubit/locale_cubit.dart';
 
 PopupMenuButton<String> homePopupMenuButton(BuildContext context) {
   return PopupMenuButton<String>(
@@ -17,27 +21,30 @@ PopupMenuButton<String> homePopupMenuButton(BuildContext context) {
       borderRadius: BorderRadius.circular(4.r),
     ),
     onSelected: (value) {
-      if (value == 'profile') {
-      } else if (value == 'complain') {
+      // if (value == 'profile') {  } else
+
+      if (value == 'complain') {
+        GoRouter.of(context).pushNamed(AppRoutes.complainPage);
       } else if (value == 'privacy policy') {
+        GoRouter.of(context).pushNamed(AppRoutes.policyPrivacyPage);
       } else if (value == 'language') {
+        if (context.read<LocaleCubit>().state.languageCode != 'ar') {
+          context.read<LocaleCubit>().changeLocale(const Locale('ar'));
+        } else {
+          context.read<LocaleCubit>().changeLocale(const Locale('en'));
+        }
       } else if (value == 'help') {
       } else if (value == 'sign out') {}
     },
     itemBuilder: (BuildContext context) {
       return [
-        PopupMenuItem(
-          height: 40.h,
-          value: 'profile',
-          child: Row(
-            spacing: 10.w,
-            children: [
-              const SvgImage(imagePath: Assets.imagesIconsProfile),
-              Text(S.of(context)!.profile, style: AppStyle.black16W500Style),
-            ],
-          ),
-        ),
-
+        // PopupMenuItem( height: 40.h,
+        //   value: 'profile',
+        //   child: Row(     spacing: 10.w,
+        //     children: [
+        //       const SvgImage(imagePath: Assets.imagesIconsProfile),
+        //       Text(S.of(context)!.profile, style: AppStyle.black16W500Style),
+        //     ], ), ),
         PopupMenuItem(
           height: 40.h,
           value: 'complain',
@@ -45,7 +52,7 @@ PopupMenuButton<String> homePopupMenuButton(BuildContext context) {
             spacing: 10.w,
             children: [
               const SvgImage(imagePath: Assets.imagesIconsComplain),
-              Text(S.of(context)!.complain, style: AppStyle.black16W500Style),
+              Text(S.of(context)!.complains, style: AppStyle.black16W500Style),
             ],
           ),
         ),

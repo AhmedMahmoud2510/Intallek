@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intallek/features/client_app/ride/select_location/models/car_type_model.dart';
@@ -18,11 +17,11 @@ class _CarTypeCardsListState extends State<CarTypeCardsList> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 74.h,
+      height: 100.h,
       child: ListView.builder(
         padding: EdgeInsets.symmetric(horizontal: 12.w),
         scrollDirection: Axis.horizontal,
-        itemExtent: 82.w,
+        itemExtent: 108.w,
         itemCount: 5,
         itemBuilder: (context, index) {
           final isSelected = selectedIndex == index;
@@ -38,7 +37,7 @@ class _CarTypeCardsListState extends State<CarTypeCardsList> {
 
             child: CarTypeCardWidget(
               car: widget.car[index],
-              isSelected: isSelected, 
+              isSelected: isSelected,
             ),
           );
         },

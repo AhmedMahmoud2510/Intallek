@@ -18,21 +18,21 @@ class ActivityPage extends StatelessWidget {
         fromPlace: 'Jaddah',
         toPlace: 'Madinah',
         price: '90',
-        time: '40 min',
+        time: '40',
       ),
       ActivityCardModel(
         orderDate: 'Today',
         fromPlace: 'Jaddah',
         toPlace: 'Madinah',
         price: '100',
-        time: '40 min',
+        time: '40',
       ),
       ActivityCardModel(
         orderDate: 'Today',
         fromPlace: 'Jaddah',
         toPlace: 'makkah',
         price: '200',
-        time: '50 min',
+        time: '50',
       ),
     ];
     return Padding(

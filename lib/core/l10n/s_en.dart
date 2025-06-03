@@ -33,7 +33,7 @@ class SEn extends S {
   String get verify => 'Verify';
 
   @override
-  String get welcomeBack => 'welcome back';
+  String get welcomeBack => 'Welcome back';
 
   @override
   String get phoneNumber => 'Phone Number';
@@ -70,7 +70,7 @@ class SEn extends S {
   String get youCanCheckYourMessages => 'You can check your messages';
 
   @override
-  String get didntReceivedCode => 'I didn’t received the code.';
+  String get didntReceivedCode => 'I didn’t received the code';
 
   @override
   String get sendAgain => 'Send again?';
@@ -107,6 +107,9 @@ class SEn extends S {
 
   @override
   String get complain => 'Complain';
+
+  @override
+  String get complains => 'Complains';
 
   @override
   String get privacyPolicy => 'Privacy Policy';
@@ -217,6 +220,9 @@ class SEn extends S {
   String get stars => 'Stars';
 
   @override
+  String get star => 'Star';
+
+  @override
   String get totalRating => 'Total rating';
 
   @override
@@ -290,4 +296,76 @@ class SEn extends S {
 
   @override
   String get forCarIssue => 'For car issue';
+
+  @override
+  String get appPrivacyPolicy => 'Antallak Application Privacy Policy';
+
+  @override
+  String get lastUpdated => 'Last Updated:';
+
+  @override
+  String get introduction => 'Introduction';
+
+  @override
+  String get introductionText =>
+      'Welcome to [Antallak], a ride-hailing and package delivery application designed to provide convenient and secure transportation and logistics services. At [Antallak], we prioritize your privacy and are committed to protecting your personal information.\nThis Privacy Policy explains how we collect, use, disclose, and safeguard your data when you use our application and related services. By accessing or using [Antallak], you agree to the terms outlined in this policy. If you do not agree, please refrain from using our services.';
+
+  @override
+  String get informationCollection => 'Information Collection';
+
+  @override
+  String get informationCollectionText =>
+      'When you use our services, we may collect the following types of information:';
+
+  @override
+  String get personalInformation => 'A. Personal Information';
+
+  @override
+  String get personalInformationText =>
+      '•\tUser Account Details: Name, email, phone number, profile photo, and payment information.\n•\tRide & Delivery Data: Pickup/drop-off locations, trip history, package details, and recipient information.\n•\tIdentification & Verification: Driver’s license, vehicle details (for drivers), and other verification documents.';
+
+  @override
+  String get questions => 'Questions?';
+
+  @override
+  String get questionsText =>
+      'If you have any questions about this Privacy Policy or our practices, please send us an email at';
+
+  @override
+  String get emailAddress => 'Antallak@antallak.com';
+
+  @override
+  String get usageTechnicalData => 'B. Usage and Technical Data';
+
+  @override
+  String get usageTechnicalDataText =>
+      '•\tDevice Information: IP address, device model, operating system, and unique identifiers.\n•\tLocation Data: GPS, Wi-Fi networks, and mobile network data to track trips and deliveries.\n•\tData Logs: App usage, interactions, and crash reports.';
+
+  @override
+  String get paymentInfo => 'C. Payment Information';
+
+  @override
+  String get paymentInfoText =>
+      '•\tCredit/debit card details, digital wallets, and transaction history (securely processed through third-party service providers).';
+
+  @override
+  String get howWeUseYourInfo => 'How We Use Your Information';
+
+  @override
+  String get howWeUseYourInfoText =>
+      '•\tTo provide, improve, and maintain our services.\n•\tTo facilitate trip bookings and parcel deliveries.\n•\tTo verify user identities and ensure security.\n•\tTo process payments and prevent fraud.\n•\tTo send updates, offers, and respond to inquiries.\n•\tTo comply with legal and regulatory requirements.';
+
+  @override
+  String get informationSharing => 'Information Sharing';
+
+  @override
+  String get informationSharingText =>
+      '•\tDrivers / Delivery Partners: Trip or shipment details as needed.\n•\tThird-Party Service Providers: Including payment processors, cloud storage services, and analytics providers.\n•\tLegal Authorities: When required by law or for security reasons.';
+
+  @override
+  String get dataSecurity => 'Data Security';
+
+  @override
+  String get dataSecurityText =>
+      '•\tWe implement standard security measures such as encryption and access controls to protect your data. However, no system is 100% secure.\n•\tWe strongly encourage you to take your own precautions to protect your information.';
 }

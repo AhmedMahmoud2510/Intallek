@@ -17,20 +17,22 @@ class CarTypeCardWidget extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: 49.h,
+          height: 60.h,
           margin: EdgeInsets.symmetric(horizontal: 4.w),
           decoration: BoxDecoration(
             color: isSelected ? AppColors.primaryColor : AppColors.thirdColor,
             borderRadius: BorderRadius.vertical(top: Radius.circular(8.r)),
             // border: isSelected
-            //     ? Border.all(color: Colors.blue, width: 2)
-            //     : null,
+            //     ? Border.fromBorderSide(
+            //         BorderSide(color: Colors.blue, width: 2.w),
+            //       )
+            //     : Border.all(color: Colors.transparent, width: 2.w),
           ),
           alignment: Alignment.center,
-          child: Image.asset(car.img, width: 60.w),
+          child: Image.asset(car.img, width: 75.w),
         ),
         Container(
-          height: 25.h,
+          height: 30.h,
           margin: EdgeInsets.symmetric(horizontal: 4.w),
           alignment: Alignment.center,
           decoration: BoxDecoration(

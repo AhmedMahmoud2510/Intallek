@@ -133,6 +133,12 @@ class _LoginBodyState extends State<LoginBody> {
                   ],
                 ),
                 24.verticalSpace,
+                40.verticalSpace,
+                TextButton(onPressed: () {
+                    GoRouter.of(
+                        context,
+                      ).pushNamed(AppRoutes.verificationPage);
+                }, child: const Text('.')),
               ],
             ),
           ),
