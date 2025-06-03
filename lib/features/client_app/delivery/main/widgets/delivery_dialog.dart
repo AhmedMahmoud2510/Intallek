@@ -20,23 +20,27 @@ class DeliveryDialog extends StatelessWidget {
         spacing: 16.h,
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisSize: MainAxisSize.min,
+
         children: [
           Image.asset(Assets.imagesPngDeliveryBox),
-          Row(
-            spacing: 6.w,
-            children: [
-              Text(
-                S.of(context)!.packageNotMore,
-                style: AppStyle.headBoldTextStyle,
+          SizedBox(
+            width: 300.w,
+            child: RichText(
+              text: TextSpan(
+                children: [
+                  TextSpan(
+                    text: S.of(context)!.packageNotMore,
+                    style: AppStyle.headBoldTextStyle,
+                  ),
+                  TextSpan(
+                    text: ' ${S.of(context)!.kilo5}',
+                    style: AppStyle.headBoldTextStyle.copyWith(
+                      color: AppColors.primaryColor,
+                    ),
+                  ),
+                ],
               ),
-              Text(
-                S.of(context)!.kilo5,
-                style: AppStyle.headBoldTextStyle.copyWith(
-                  color: AppColors.primaryColor,
-                ),
-              ),
-            ],
+            ),
           ),
           16.verticalSpace,
           CustomPrimaryBotton(

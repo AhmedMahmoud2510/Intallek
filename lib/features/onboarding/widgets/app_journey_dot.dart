@@ -24,7 +24,7 @@ class CustomJourneyDot extends StatelessWidget {
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 500),
               height: 10.h,
-              width: 12.w,
+              width: 14.w,
               decoration: BoxDecoration(
                 color: activeIndex == index
                     ? AppColors.secondaryColor

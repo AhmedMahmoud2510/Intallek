@@ -10,6 +10,8 @@ class Assets {
 
   static const String imagesIconsAnalys = "assets/images/icons/analys.svg";
 
+  static const String imagesIconsBag = "assets/images/icons/bag.svg";
+
   static const String imagesIconsBell = "assets/images/icons/bell.svg";
 
   static const String imagesIconsClock = "assets/images/icons/clock.svg";

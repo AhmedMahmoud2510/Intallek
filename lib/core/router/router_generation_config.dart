@@ -3,12 +3,16 @@ import 'package:intallek/core/router/app_routes.dart';
 import 'package:intallek/features/auth/login/views/login_screen.dart';
 import 'package:intallek/features/auth/register/views/register_page.dart';
 import 'package:intallek/features/auth/verification/views/verification_page.dart';
+import 'package:intallek/features/client_app/complain/complain_page.dart';
+import 'package:intallek/features/client_app/delivery/delivery_details/delivery_details_page.dart';
 import 'package:intallek/features/client_app/delivery/main/delivery_page.dart';
+import 'package:intallek/features/client_app/delivery/select_location/select_location_delivery_page.dart';
 import 'package:intallek/features/client_app/navigation_bar/app_navigation_bar.dart';
 import 'package:intallek/features/client_app/ride/main/ride_page.dart';
 import 'package:intallek/features/client_app/ride/ride_details/ride_details_page.dart';
 import 'package:intallek/features/client_app/ride/select_location/select_location_ride_page.dart';
 import 'package:intallek/features/onboarding/views/onboarding_screen.dart';
+import 'package:intallek/features/policy_privacy/policy_privacy_page.dart';
 import 'package:intallek/features/splash/views/splash_screen.dart';
 
 class RouterGenerationConfig {
@@ -56,14 +60,34 @@ class RouterGenerationConfig {
         builder: (context, state) => const DeliveryPage(),
       ),
       GoRoute(
-        path: AppRoutes.selectLocationPage,
-        name: AppRoutes.selectLocationPage,
+        path: AppRoutes.selectLocationRidePage,
+        name: AppRoutes.selectLocationRidePage,
         builder: (context, state) => const SelectLocationRidePage(),
       ),
       GoRoute(
         path: AppRoutes.rideDetailsPage,
         name: AppRoutes.rideDetailsPage,
         builder: (context, state) => const RideDetailsPage(),
+      ),
+      GoRoute(
+        path: AppRoutes.selectLocationDeliveryPage,
+        name: AppRoutes.selectLocationDeliveryPage,
+        builder: (context, state) => const SelectLocationDeliveryPage(),
+      ),
+      GoRoute(
+        path: AppRoutes.deliveryDetailsPage,
+        name: AppRoutes.deliveryDetailsPage,
+        builder: (context, state) => const DeliveryDetailsPage(),
+      ),
+      GoRoute(
+        path: AppRoutes.complainPage,
+        name: AppRoutes.complainPage,
+        builder: (context, state) => const ComplainPage(),
+      ),
+      GoRoute(
+        path: AppRoutes.policyPrivacyPage,
+        name: AppRoutes.policyPrivacyPage,
+        builder: (context, state) => const PolicyPrivacyPage(),
       ),
     ],
   );

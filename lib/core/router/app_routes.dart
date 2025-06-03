@@ -6,7 +6,13 @@ class AppRoutes {
   static const String verificationPage = '/verificationPage';
   static const String appNavigationBar = '/appNavigationBar';
   static const String ridePage = '/ridePage';
-  static const String deliveryPage = '/deliveryPage';
-  static const String selectLocationPage = '/selectLocationPage';
+
+  static const String selectLocationRidePage = '/selectLocationRidePage';
   static const String rideDetailsPage = '/rideDetailsPage';
+  static const String deliveryPage = '/deliveryPage';
+  static const String selectLocationDeliveryPage =
+      '/selectLocationDeliveryPage';
+  static const String deliveryDetailsPage = '/deliveryDetailsPage';
+  static const String complainPage = '/complainPage';
+  static const String policyPrivacyPage = '/policyPrivacyPage';
 }

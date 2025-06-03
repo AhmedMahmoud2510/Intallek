@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -39,8 +38,9 @@ class DeliveryDraggableSheet extends StatelessWidget {
           ),
           20.verticalSpace,
           CustomPrimaryTextfield(
-            onTap: () =>
-                GoRouter.of(context).pushNamed(AppRoutes.selectLocationPage),
+            onTap: () => GoRouter.of(
+              context,
+            ).pushNamed(AppRoutes.selectLocationDeliveryPage),
             readOnly: true,
             prefix: Padding(
               padding: EdgeInsets.all(8.h),

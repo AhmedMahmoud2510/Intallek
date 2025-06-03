@@ -38,8 +38,9 @@ class RideDraggableSheet extends StatelessWidget {
           ),
           20.verticalSpace,
           CustomPrimaryTextfield(
-            onTap: () =>
-                GoRouter.of(context).pushNamed(AppRoutes.selectLocationPage),
+            onTap: () => GoRouter.of(
+              context,
+            ).pushNamed(AppRoutes.selectLocationRidePage),
             readOnly: true,
             prefix: Padding(
               padding: EdgeInsets.all(8.h),

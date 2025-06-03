@@ -26,9 +26,9 @@ class _VerificationBodyState extends State<VerificationBody> {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            80.verticalSpace,
+            110.verticalSpace,
             AuthHeadWidget(text: S.of(context)!.enterYourVerificationCode),
-            40.verticalSpace,
+            50.verticalSpace,
             PinCodeTextField(
               appContext: context,
               length: 4,
@@ -46,10 +46,30 @@ class _VerificationBodyState extends State<VerificationBody> {
               ),
             ),
 
-            40.verticalSpace,
+            50.verticalSpace,
+            Text(
+              S.of(context)!.weSendVerificationCTo,
+              textAlign: TextAlign.center,
+              style: AppStyle.black16W400Style,
+            ),
 
-            const CustomTimerWidget(),
-            86.verticalSpace,
+            Row(
+              spacing: 6.w,
+              children: [
+                Text(
+                  'xxxxxxxxxx321',
+                  style: AppStyle.black16W400Style.copyWith(
+                    color: AppColors.primaryColor,
+                  ),
+                ),
+                Text(
+                  S.of(context)!.youCanCheckYourMessages,
+                  style: AppStyle.black16W400Style,
+                ),
+              ],
+            ),
+
+            10.verticalSpace,
             CustomPrimaryBotton(
               text: S.of(context)!.verify,
               onPressed: () {
@@ -72,8 +92,7 @@ class _VerificationBodyState extends State<VerificationBody> {
                   ),
                 ),
                 InkWell(
-                  onTap: () =>
-                      GoRouter.of(context).pushNamed(AppRoutes.registerScreen),
+                  onTap: () {},
                   child: Text(
                     S.of(context)!.sendAgain,
                     textAlign: TextAlign.center,
@@ -82,6 +101,7 @@ class _VerificationBodyState extends State<VerificationBody> {
                     ),
                   ),
                 ),
+                const CustomTimerWidget(),
               ],
             ),
             24.verticalSpace,

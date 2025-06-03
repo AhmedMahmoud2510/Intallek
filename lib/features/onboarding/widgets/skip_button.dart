@@ -14,7 +14,8 @@ class SkipButton extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(right: 15.w, left: 15.w, top: 60.h),
       child: GestureDetector(
-        onTap: () => GoRouter.of(context).pushNamed(AppRoutes.loginScreen),
+        onTap: () =>
+            GoRouter.of(context).pushReplacementNamed(AppRoutes.loginScreen),
         child: Align(
           alignment: Alignment.topRight,
           child: Text(

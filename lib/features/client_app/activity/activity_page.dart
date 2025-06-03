@@ -40,11 +40,14 @@ class ActivityPage extends StatelessWidget {
       child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
-            child: Text(
-              S.of(context)!.upcoming,
-              style: AppStyle.black20W700Style.copyWith(
-                decoration: TextDecoration.underline,
-                height: 1.6.h,
+            child: Padding(
+              padding: EdgeInsets.only(top: 16.h),
+              child: Text(
+                S.of(context)!.upcoming,
+                style: AppStyle.black20W700Style.copyWith(
+                  decoration: TextDecoration.underline,
+                  height: 1.6.h,
+                ),
               ),
             ),
           ),

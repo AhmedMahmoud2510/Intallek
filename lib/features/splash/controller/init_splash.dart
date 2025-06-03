@@ -11,5 +11,5 @@ Future<void> initSplashScreen(BuildContext context) async {
   await Future.delayed(const Duration(seconds: 3));
 
   // Navigate to authentication check screen
-  await GoRouter.of(context).pushNamed(AppRoutes.onbordingScreen);
+  await GoRouter.of(context).pushReplacementNamed(AppRoutes.onbordingScreen);
 }

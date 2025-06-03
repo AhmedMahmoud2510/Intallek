@@ -98,7 +98,9 @@ class _OnboardingBodyState extends State<OnboardingBody> {
             index: _currentIndex,
             onTap: () {
               if (_currentIndex == 2) {
-                GoRouter.of(context).pushNamed(AppRoutes.loginScreen);
+                GoRouter.of(
+                  context,
+                ).pushReplacementNamed(AppRoutes.loginScreen);
               } else if (_currentIndex == 0) {
                 _pageController.nextPage(
                   duration: const Duration(seconds: 1),

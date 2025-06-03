@@ -1,8 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:intallek/core/l10n/s.dart';
 import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/core/theme/text_styles.dart';
 
@@ -50,15 +48,8 @@ class _CustomTimerWidgetState extends State<CustomTimerWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          '00:${timeLeft.toString().padLeft(2, '0')}',
-          style: AppStyle.black16W400Style.copyWith(
-            color: AppColors.primaryColor,
-          ),
-        ),
+    return 
+        
         InkWell(
           onTap: isButtonDisabled
               ? null
@@ -70,29 +61,12 @@ class _CustomTimerWidgetState extends State<CustomTimerWidget> {
                   });
 
                   /// send code
-                },
-          child: Text(
-            S.of(context)!.weSendVerificationCTo,
-            textAlign: TextAlign.center,
-            style: AppStyle.black16W400Style,
+                },child: Text(
+          '00:${timeLeft.toString().padLeft(2, '0')}',
+          style: AppStyle.black16W400Style.copyWith(
+            color: AppColors.primaryColor,
           ),
         ),
-        Row(
-          spacing: 6.w,
-          children: [
-            Text(
-              'xxxxxxxxxx321',
-              style: AppStyle.black16W400Style.copyWith(
-                color: AppColors.primaryColor,
-              ),
-            ),
-            Text(
-              S.of(context)!.youCanCheckYourMessages,
-              style: AppStyle.black16W400Style,
-            ),
-          ],
-        ),
-      ],
-    );
+        );
   }
 }
