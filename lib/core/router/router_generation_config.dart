@@ -65,7 +65,10 @@ class RouterGenerationConfig {
         name: AppRoutes.deliveryPage,
         builder: (context, state) {
           context.read<LocationCubit>().getCurrentLocation();
-          return const DeliveryPage();
+          return BlocProvider<SheetCubit>(
+            create: (context) => SheetCubit(),
+            child: const DeliveryPage(),
+          );
         },
       ),
 
