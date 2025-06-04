@@ -63,7 +63,8 @@ class LocationCubit extends Cubit<LocationState> {
       emit(LocationLoaded(current.position, selectedLocation: newLocation));
     }
   }
-///
+
+  ///
   List<String> suggestions = [];
   void clearSuggestions() => emit(LocationSuggestionsUpdated([]));
 

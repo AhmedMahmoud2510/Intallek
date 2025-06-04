@@ -2,15 +2,26 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intallek/core/l10n/s.dart';
 import 'package:intallek/core/theme/assets.dart';
+import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/core/theme/text_styles.dart';
 import 'package:intallek/core/widgets/custom_primary_botton.dart';
 import 'package:intallek/core/widgets/svg_image_widget.dart';
+import 'package:intallek/presentation/app/models/total_rating_model.dart';
+import 'package:intallek/presentation/app/widgets/total_rating_widget.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final rate = TotalRatingModel(
+      stars1: 6,
+      stars2: 0,
+      stars3: 42,
+      stars4: 20,
+      stars5: 60,
+      userName: 'Ahmed Mahmoud',
+    );
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 16.w),
       child: Column(
@@ -38,19 +49,8 @@ class ProfilePage extends StatelessWidget {
               16.horizontalSpace,
               Column(
                 children: [
-                  Text('Ahmed Mahmoud', style: AppStyle.headBoldTextStyle),
-                  Row(
-                    spacing: 10.w,
-                    children: [
-                      Image.asset(Assets.imagesPngStar, height: 22.h),
-                      Text(
-                        '4.6',
-                        style: AppStyle.gray14W400Style.copyWith(
-                          fontSize: 16.sp,
-                        ),
-                      ),
-                    ],
-                  ),
+                  Text(rate.userName, style: AppStyle.headBoldTextStyle),
+                  TotalRatingWidget(rate: rate),
                 ],
               ),
             ],
@@ -66,12 +66,14 @@ class ProfilePage extends StatelessWidget {
           Text('05051612412', style: AppStyle.gray14W400Style),
           20.verticalSpace,
           Row(
-            spacing: 12.w,
+            spacing: 8.w,
             children: [
-              const Icon(Icons.delete_outlined),
+              const Icon(Icons.delete, color: AppColors.errorColor),
               Text(
                 S.of(context)!.deleteAccount,
-                style: AppStyle.black16W700Style,
+                style: AppStyle.black16W700Style.copyWith(
+                  color: AppColors.errorColor,
+                ),
               ),
             ],
           ),

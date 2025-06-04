@@ -9,10 +9,10 @@ import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/core/theme/text_styles.dart';
 import 'package:intallek/core/widgets/custom_primary_botton.dart';
 import 'package:intallek/core/widgets/custom_primary_textfield.dart';
-import 'package:intallek/features/client_app/ride/cubit/sheet_cubit.dart';
-import 'package:intallek/features/client_app/ride/models/car_type_model.dart';
-import 'package:intallek/features/client_app/ride/views/select_destination/widgets/car_type_cards_list.dart';
-import 'package:intallek/features/client_app/ride/views/select_destination/widgets/search_your_destination.dart';
+import 'package:intallek/features/client_app/services/cubit/sheet_cubit.dart';
+import 'package:intallek/features/client_app/services/models/car_type_model.dart';
+import 'package:intallek/features/client_app/services/views/ride/select_destination/widgets/car_type_cards_list.dart';
+import 'package:intallek/features/client_app/services/views/ride/select_destination/widgets/search_your_destination.dart';
 import 'package:intallek/presentation/app/controllers/location_cubit/location_cubit.dart';
 
 class SelectDestinationRideDraggableSheet extends StatelessWidget {

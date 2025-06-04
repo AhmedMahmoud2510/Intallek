@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:intallek/features/client_app/ride/cubit/sheet_cubit.dart';
-import 'package:intallek/features/client_app/ride/refactors/main_ride_draggable_sheet.dart';
+import 'package:intallek/features/client_app/services/cubit/sheet_cubit.dart';
+import 'package:intallek/features/client_app/services/views/delivery/main_delivery_draggable_sheet.dart';
 import 'package:intallek/presentation/app/widgets/google_map_widget.dart';
 
-class RidePage extends StatelessWidget {
-  const RidePage({super.key});
+class DeliveryPage extends StatelessWidget {
+  const DeliveryPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,10 +38,10 @@ class RidePage extends StatelessWidget {
                 maxChildSize: index == 0
                     ? 0.6
                     : index == 1
-                    ? 0.85
+                    ? 0.9
                     : 0.95,
                 builder: (_, controller) {
-                  return RideDraggableSheet(
+                  return DeliveryDraggableSheet(
                     index: index,
                     controller: controller,
                   );

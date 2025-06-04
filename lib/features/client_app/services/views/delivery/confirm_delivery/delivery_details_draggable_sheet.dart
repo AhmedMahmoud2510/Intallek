@@ -7,8 +7,8 @@ import 'package:intallek/core/theme/text_styles.dart';
 import 'package:intallek/core/widgets/custom_primary_botton.dart';
 import 'package:intallek/core/widgets/svg_image_widget.dart';
 
-class RideDetailsDraggableSheet extends StatelessWidget {
-  const RideDetailsDraggableSheet({super.key, this.controller});
+class DeliveryDetailsDraggableSheet extends StatelessWidget {
+  const DeliveryDetailsDraggableSheet({super.key, this.controller});
   final ScrollController? controller;
   @override
   Widget build(BuildContext context) {
@@ -74,7 +74,7 @@ class RideDetailsDraggableSheet extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Ahmed Mahmoud', style: AppStyle.headBoldTextStyle),
+                Text('Abdullah Ahmed', style: AppStyle.headBoldTextStyle),
                 Row(
                   spacing: 10.w,
                   children: [
@@ -83,7 +83,7 @@ class RideDetailsDraggableSheet extends StatelessWidget {
                       color: AppColors.forthColor,
                     ),
                     Text(
-                      '05023146523',
+                      '05023147523',
                       style: AppStyle.gray14W400Style.copyWith(fontSize: 16.sp),
                     ),
                   ],
@@ -93,7 +93,7 @@ class RideDetailsDraggableSheet extends StatelessWidget {
                   children: [
                     Image.asset(Assets.imagesPngStar, height: 22.h),
                     Text(
-                      '4.6',
+                      '4.9',
                       style: AppStyle.gray14W400Style.copyWith(fontSize: 16.sp),
                     ),
                   ],
@@ -184,6 +184,15 @@ class RideDetailsDraggableSheet extends StatelessWidget {
                 ),
               ],
             ),
+          ],
+        ),
+        12.verticalSpace,
+        Row(
+          spacing: 6.w,
+
+          children: [
+            const SvgImage(imagePath: Assets.imagesIconsBag),
+            Text('15 ${S.of(context)!.min}', style: AppStyle.black16W400Style),
           ],
         ),
 

@@ -41,13 +41,10 @@ class ActivityPage extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(
             child: Padding(
-              padding: EdgeInsets.only(top: 16.h),
+              padding: EdgeInsets.only(top: 18.h, bottom: 8.h),
               child: Text(
                 S.of(context)!.upcoming,
-                style: AppStyle.black20W700Style.copyWith(
-                  decoration: TextDecoration.underline,
-                  height: 1.6.h,
-                ),
+                style: AppStyle.black20W700Style,
               ),
             ),
           ),
@@ -69,11 +66,11 @@ class ActivityPage extends StatelessWidget {
             },
           ),
           SliverToBoxAdapter(
-            child: Text(
-              S.of(context)!.past,
-              style: AppStyle.black20W700Style.copyWith(
-                decoration: TextDecoration.underline,
-                height: 1.58.h,
+            child: Padding(
+              padding: EdgeInsets.only(top: 18.h, bottom: 8.h),
+              child: Text(
+                S.of(context)!.past,
+                style: AppStyle.black20W700Style,
               ),
             ),
           ),

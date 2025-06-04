@@ -5,12 +5,10 @@ import 'package:intallek/features/auth/login/views/login_screen.dart';
 import 'package:intallek/features/auth/register/views/register_page.dart';
 import 'package:intallek/features/auth/verification/views/verification_page.dart';
 import 'package:intallek/features/client_app/complain/complain_page.dart';
-import 'package:intallek/features/client_app/delivery/delivery_details/delivery_details_page.dart';
-import 'package:intallek/features/client_app/delivery/main/delivery_page.dart';
-import 'package:intallek/features/client_app/delivery/select_location/select_location_delivery_page.dart';
 import 'package:intallek/features/client_app/navigation_bar/app_navigation_bar.dart';
-import 'package:intallek/features/client_app/ride/cubit/sheet_cubit.dart';
-import 'package:intallek/features/client_app/ride/views/ride_page.dart';
+import 'package:intallek/features/client_app/services/cubit/sheet_cubit.dart';
+import 'package:intallek/features/client_app/services/views/delivery/delivery_page.dart';
+import 'package:intallek/features/client_app/services/views/ride/ride_page.dart';
 import 'package:intallek/features/onboarding/views/onboarding_screen.dart';
 import 'package:intallek/features/policy_privacy/policy_privacy_page.dart';
 import 'package:intallek/features/splash/views/splash_screen.dart';
@@ -71,16 +69,6 @@ class RouterGenerationConfig {
         },
       ),
 
-      GoRoute(
-        path: AppRoutes.selectLocationDeliveryPage,
-        name: AppRoutes.selectLocationDeliveryPage,
-        builder: (context, state) => const SelectLocationDeliveryPage(),
-      ),
-      GoRoute(
-        path: AppRoutes.deliveryDetailsPage,
-        name: AppRoutes.deliveryDetailsPage,
-        builder: (context, state) => const DeliveryDetailsPage(),
-      ),
       GoRoute(
         path: AppRoutes.complainPage,
         name: AppRoutes.complainPage,

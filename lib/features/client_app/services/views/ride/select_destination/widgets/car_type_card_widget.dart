@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/core/theme/text_styles.dart';
-import 'package:intallek/features/client_app/ride/models/car_type_model.dart';
+import 'package:intallek/features/client_app/services/models/car_type_model.dart';
 
 class CarTypeCardWidget extends StatelessWidget {
   const CarTypeCardWidget({

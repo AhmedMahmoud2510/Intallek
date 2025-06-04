@@ -8,10 +8,10 @@ import 'package:intallek/core/theme/text_styles.dart';
 import 'package:intallek/core/theme/values.dart';
 import 'package:intallek/core/widgets/custom_primary_textfield.dart';
 import 'package:intallek/core/widgets/svg_image_widget.dart';
-import 'package:intallek/features/client_app/ride/cubit/sheet_cubit.dart';
+import 'package:intallek/features/client_app/services/cubit/sheet_cubit.dart';
 
-class StartLocationDraggable extends StatelessWidget {
-  const StartLocationDraggable({super.key, this.controller});
+class StartLocationDeliveryDraggable extends StatelessWidget {
+  const StartLocationDeliveryDraggable({super.key, this.controller});
 
   final ScrollController? controller;
 

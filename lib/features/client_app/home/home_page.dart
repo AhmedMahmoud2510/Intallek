@@ -26,13 +26,7 @@ class HomePage extends StatelessWidget {
             16.verticalSpace, //60
             const OfferHomeWidget(),
             16.verticalSpace, //60
-            Text(
-              S.of(context)!.service,
-              style: AppStyle.black20W700Style.copyWith(
-                decoration: TextDecoration.underline,
-                height: 1.6.h,
-              ),
-            ),
+            Text(S.of(context)!.service, style: AppStyle.black20W700Style),
             12.verticalSpace, //20
 
             Row(

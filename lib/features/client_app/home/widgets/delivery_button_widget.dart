@@ -7,7 +7,7 @@ import 'package:intallek/core/theme/text_styles.dart';
 import 'package:intallek/core/theme/values.dart';
 import 'package:intallek/core/widgets/custom_primary_dialog.dart';
 import 'package:intallek/core/widgets/svg_image_widget.dart';
-import 'package:intallek/features/client_app/delivery/main/widgets/delivery_dialog.dart';
+import 'package:intallek/features/client_app/services/views/delivery/widgets/delivery_dialog.dart';
 
 class DeliveryButtonWidget extends StatelessWidget {
   const DeliveryButtonWidget({super.key});
