@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:intallek/core/theme/colors.dart';
 import 'package:intallek/core/theme/values.dart';
-import 'package:intallek/features/client_app/ride/refactors/find_ride_draggable_sheet.dart';
-import 'package:intallek/features/client_app/ride/refactors/ride_details_draggable_sheet.dart';
-import 'package:intallek/features/client_app/ride/refactors/select_location_draggable.dart';
+import 'package:intallek/features/client_app/ride/views/confirm_ride/ride_details_draggable_sheet.dart';
+import 'package:intallek/features/client_app/ride/views/select_destination/select_destination_ride_draggable_sheet.dart';
+import 'package:intallek/features/client_app/ride/views/start_location/start_location_draggable.dart';
 
 class RideDraggableSheet extends StatelessWidget {
   const RideDraggableSheet({required this.index, super.key, this.controller});
@@ -19,10 +19,10 @@ class RideDraggableSheet extends StatelessWidget {
         ),
       ),
       child: index == 0
-          ? SelectLocationDraggable(controller: controller)
+          ? StartLocationDraggable(controller: controller)
           : index == 1
-          ? const FindRideDraggableSheet()
-          : const RideDetailsDraggableSheet(),
+          ? SelectDestinationRideDraggableSheet(controller: controller)
+          : RideDetailsDraggableSheet(controller: controller),
     );
   }
 }

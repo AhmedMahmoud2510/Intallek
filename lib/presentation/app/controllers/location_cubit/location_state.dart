@@ -1,17 +1,23 @@
 part of 'location_cubit.dart';
 
-abstract class LocationState {}
+sealed class LocationState {}
 
-class LocationInitial extends LocationState {}
+final class LocationInitial extends LocationState {}
 
-class LocationLoading extends LocationState {}
+final class LocationLoading extends LocationState {}
 
-class LocationLoaded extends LocationState {
-  LocationLoaded(this.position);
+final class LocationLoaded extends LocationState {
+  LocationLoaded(this.position, {this.selectedLocation});
   final Position position;
+  final LatLng? selectedLocation;
 }
 
-class LocationError extends LocationState {
-  LocationError(this.message);
-  final String message;
+final class LocationError extends LocationState {
+  LocationError(this.error);
+  final String error;
+}
+
+class LocationSuggestionsUpdated extends LocationState {
+  LocationSuggestionsUpdated(this.suggestions);
+  final List<String> suggestions;
 }

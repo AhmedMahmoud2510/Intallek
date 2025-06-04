@@ -102,12 +102,10 @@ class _LoginBodyState extends State<LoginBody> {
                 CustomPrimaryBotton(
                   text: S.of(context)!.signIn,
                   onPressed: () {
-                    if (formKey.currentState!.validate()) {
-                      /// TODO
-                      GoRouter.of(
-                        context,
-                      ).pushNamed(AppRoutes.verificationPage);
-                    }
+                    // if (formKey.currentState!.validate()) {
+                    /// TODO
+                    GoRouter.of(context).pushNamed(AppRoutes.verificationPage);
+                    // }
                   },
                 ),
                 8.verticalSpace,
@@ -134,11 +132,12 @@ class _LoginBodyState extends State<LoginBody> {
                 ),
                 24.verticalSpace,
                 40.verticalSpace,
-                TextButton(onPressed: () {
-                    GoRouter.of(
-                        context,
-                      ).pushNamed(AppRoutes.verificationPage);
-                }, child: const Text('.')),
+                TextButton(
+                  onPressed: () {
+                    GoRouter.of(context).pushNamed(AppRoutes.verificationPage);
+                  },
+                  child: const Text('.'),
+                ),
               ],
             ),
           ),

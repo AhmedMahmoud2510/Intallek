@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intallek/features/client_app/ride/cubit/sheet_cubit.dart';
-import 'package:intallek/features/client_app/ride/widgets/google_map_widget.dart';
-import 'package:intallek/features/client_app/ride/widgets/main_ride_draggable_sheet.dart';
+import 'package:intallek/features/client_app/ride/refactors/main_ride_draggable_sheet.dart';
+import 'package:intallek/presentation/app/widgets/google_map_widget.dart';
 
 class RidePage extends StatelessWidget {
   const RidePage({super.key});
@@ -19,11 +19,12 @@ class RidePage extends StatelessWidget {
       ),
       body: Stack(
         children: [
-          const GoogleMapWidget(),
+          const Positioned.fill(child: GoogleMapWidget()),
 
           BlocBuilder<SheetCubit, int>(
             builder: (context, index) {
               return DraggableScrollableSheet(
+                snap: true,
                 initialChildSize: index == 0
                     ? 0.4
                     : index == 1
@@ -32,7 +33,7 @@ class RidePage extends StatelessWidget {
                 minChildSize: index == 0
                     ? 0.2
                     : index == 1
-                    ? 0.85
+                    ? 0.2
                     : 0.4,
                 maxChildSize: index == 0
                     ? 0.6
@@ -41,8 +42,8 @@ class RidePage extends StatelessWidget {
                     : 0.95,
                 builder: (_, controller) {
                   return RideDraggableSheet(
-                    controller: controller,
                     index: index,
+                    controller: controller,
                   );
                 },
               );

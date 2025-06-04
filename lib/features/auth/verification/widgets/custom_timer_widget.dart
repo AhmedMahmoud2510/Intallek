@@ -66,7 +66,7 @@ class _CustomTimerWidgetState extends State<CustomTimerWidget> {
           children: [
             TextSpan(
               text: S.of(context)!.sendAgain,
-              style: AppStyle.black16W500Style.copyWith(
+              style: AppStyle.black16W700Style.copyWith(
                 color: isButtonDisabled
                     ? AppColors.darkGreyColor
                     : AppColors.primaryColor,

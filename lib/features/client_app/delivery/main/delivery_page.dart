@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intallek/features/client_app/delivery/main/widgets/delivery_draggable_sheet.dart';
-import 'package:intallek/features/client_app/ride/widgets/google_map_widget.dart';
+import 'package:intallek/presentation/app/widgets/google_map_widget.dart';
 
 class DeliveryPage extends StatelessWidget {
   const DeliveryPage({super.key});

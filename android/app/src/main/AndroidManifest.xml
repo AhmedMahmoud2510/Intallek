@@ -2,6 +2,7 @@
     <application
         android:usesCleartextTraffic="true"
         android:requestLegacyExternalStorage="true"
+        android:enableOnBackInvokedCallback="true"
         android:allowBackup="true"
         android:label="intallek"
         android:name="${applicationName}"

@@ -14,14 +14,15 @@ class OnboaredText extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Text(
-          textAlign: TextAlign.justify,
           index == 0
               ? S.of(context)!.onboarding1
               : index == 1
               ? S.of(context)!.onboarding2
               : S.of(context)!.onboarding3,
-          style: AppStyle.headBoldTextStyle.copyWith(height: 1.h,
-          fontFamily: AppFonts.kArabicFont),
+          style: AppStyle.black18W700Style.copyWith(
+            height: 1.3.h,
+            fontFamily: AppFonts.kArabicFont,
+          ),
         ),
       ),
     );

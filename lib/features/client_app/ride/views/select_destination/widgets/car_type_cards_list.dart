@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:intallek/features/client_app/ride/select_location/models/car_type_model.dart';
-import 'package:intallek/features/client_app/ride/select_location/widgets/car_type_card_widget.dart';
+import 'package:intallek/features/client_app/ride/models/car_type_model.dart';
+import 'package:intallek/features/client_app/ride/views/select_destination/widgets/car_type_card_widget.dart';
 
 class CarTypeCardsList extends StatefulWidget {
   const CarTypeCardsList({required this.car, super.key});

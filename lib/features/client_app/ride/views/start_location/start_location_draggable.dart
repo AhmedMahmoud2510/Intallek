@@ -10,8 +10,8 @@ import 'package:intallek/core/widgets/custom_primary_textfield.dart';
 import 'package:intallek/core/widgets/svg_image_widget.dart';
 import 'package:intallek/features/client_app/ride/cubit/sheet_cubit.dart';
 
-class SelectLocationDraggable extends StatelessWidget {
-  const SelectLocationDraggable({required this.controller, super.key});
+class StartLocationDraggable extends StatelessWidget {
+  const StartLocationDraggable({super.key, this.controller});
 
   final ScrollController? controller;
 
@@ -19,6 +19,7 @@ class SelectLocationDraggable extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       controller: controller,
+      physics: const AlwaysScrollableScrollPhysics(),
       padding: EdgeInsets.all(AppValues.radius),
       children: [
         Align(
@@ -35,7 +36,6 @@ class SelectLocationDraggable extends StatelessWidget {
         CustomPrimaryTextfield(
           onTap: () {
             context.read<SheetCubit>().changeSheet(1);
-            // GoRouter.of(context).pushNamed(AppRoutes.selectLocationRidePage);
           },
           readOnly: true,
           prefix: Padding(
@@ -76,7 +76,7 @@ class SelectLocationDraggable extends StatelessWidget {
             SvgImage(imagePath: Assets.imagesIconsClock, height: 22.h),
             Text(
               'Saudi German Hospital - Jeddah',
-              style: AppStyle.black16W400Style.copyWith(),
+              style: AppStyle.black16W400Style,
             ),
           ],
         ),
@@ -88,7 +88,7 @@ class SelectLocationDraggable extends StatelessWidget {
             SvgImage(imagePath: Assets.imagesIconsClock, height: 22.h),
             Text(
               'Saudi German Hospital - Jeddah',
-              style: AppStyle.black16W400Style.copyWith(),
+              style: AppStyle.black16W400Style,
             ),
           ],
         ),

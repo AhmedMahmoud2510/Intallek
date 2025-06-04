@@ -114,7 +114,7 @@ class SAr extends S {
   String get privacyPolicy => 'سياسة الخصوصية';
 
   @override
-  String get language => 'اللغة';
+  String get language => 'تغيير اللغة';
 
   @override
   String get help => 'المساعدة';

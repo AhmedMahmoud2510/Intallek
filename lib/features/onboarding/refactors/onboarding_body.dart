@@ -52,7 +52,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
                 /// images
                 Container(
                   width: MediaQuery.sizeOf(context).width,
-                  height: MediaQuery.sizeOf(context).height / 1.6,
+                  height: MediaQuery.sizeOf(context).height / 1.7,
                   padding: EdgeInsets.only(top: 135.h),
                   alignment: Alignment.center,
                   decoration: ShapeDecoration(
@@ -75,10 +75,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
                 ),
 
                 /// onboard text
-                SizedBox(
-                  height: MediaQuery.sizeOf(context).height / 7,
-                  child: OnboaredText(index: index),
-                ),
+                SizedBox(child: OnboaredText(index: index)),
               ],
             );
           },

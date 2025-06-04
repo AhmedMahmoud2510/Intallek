@@ -115,7 +115,7 @@ class SEn extends S {
   String get privacyPolicy => 'Privacy Policy';
 
   @override
-  String get language => 'Language';
+  String get language => 'Change Language';
 
   @override
   String get help => 'Help';

@@ -20,6 +20,7 @@ class CustomPrimaryTextfield extends StatelessWidget {
     this.style,
     this.readOnly,
     this.onTap,
+    this.onChanged,
   });
   final TextEditingController? controller;
   final FocusNode? focusNode;
@@ -34,18 +35,20 @@ class CustomPrimaryTextfield extends StatelessWidget {
   final TextStyle? style;
   final bool? readOnly;
   final void Function()? onTap;
+  final void Function(String)? onChanged;
   @override
   Widget build(BuildContext context) {
     final isFocused = focusNode?.hasFocus;
     return TextFormField(
+      onChanged: onChanged,
       onTap: onTap,
       readOnly: readOnly ?? false,
-      style: AppStyle.gray14W400Style,
+      style: style ?? AppStyle.gray14W400Style,
       textAlign: textAlign ?? TextAlign.center,
       validator: validator,
       focusNode: focusNode,
       controller: controller,
-      cursorColor: AppColors.greyColor,
+      cursorColor: AppColors.forthColor,
       obscureText: isPassword ?? false,
       decoration: InputDecoration(
         hint: Text(text ?? '', style: style ?? AppStyle.black20W700Style),

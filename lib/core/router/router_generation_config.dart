@@ -10,7 +10,7 @@ import 'package:intallek/features/client_app/delivery/main/delivery_page.dart';
 import 'package:intallek/features/client_app/delivery/select_location/select_location_delivery_page.dart';
 import 'package:intallek/features/client_app/navigation_bar/app_navigation_bar.dart';
 import 'package:intallek/features/client_app/ride/cubit/sheet_cubit.dart';
-import 'package:intallek/features/client_app/ride/ride_page.dart';
+import 'package:intallek/features/client_app/ride/views/ride_page.dart';
 import 'package:intallek/features/onboarding/views/onboarding_screen.dart';
 import 'package:intallek/features/policy_privacy/policy_privacy_page.dart';
 import 'package:intallek/features/splash/views/splash_screen.dart';

@@ -14,11 +14,11 @@ PopupMenuButton<String> homePopupMenuButton(BuildContext context) {
   return PopupMenuButton<String>(
     icon: const SvgImage(imagePath: Assets.imagesIconsMenu),
     iconColor: AppColors.forthColor,
-    constraints: BoxConstraints(minWidth: 140.w),
+    constraints: BoxConstraints(minWidth: 150.w),
     color: AppColors.scaffoldBackgroundLight,
     shape: RoundedRectangleBorder(
       side: const BorderSide(color: AppColors.scaffoldBackgroundLight),
-      borderRadius: BorderRadius.circular(4.r),
+      borderRadius: BorderRadius.circular(9.r),
     ),
     onSelected: (value) {
       // if (value == 'profile') {  } else

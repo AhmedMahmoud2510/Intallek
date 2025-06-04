@@ -63,11 +63,12 @@ class _VerificationBodyState extends State<VerificationBody> {
                       text: 'xxxxxxxxxx321',
                       style: AppStyle.black16W400Style.copyWith(
                         color: AppColors.primaryColor,
+                        height: 1.5.h,
                       ),
                     ),
                     TextSpan(
-                      text: ' ${S.of(context)!.youCanCheckYourMessages}',
-                      style: AppStyle.black16W400Style,
+                      text: '  ${S.of(context)!.youCanCheckYourMessages}',
+                      style: AppStyle.black16W400Style.copyWith(height: 1.5.h),
                     ),
                   ],
                 ),
@@ -83,11 +84,11 @@ class _VerificationBodyState extends State<VerificationBody> {
                 ).pushReplacementNamed(AppRoutes.appNavigationBar);
               },
             ),
-            8.verticalSpace,
+            10.verticalSpace,
             Row(
               spacing: 6.w,
               mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
                   S.of(context)!.didntReceivedCode,
